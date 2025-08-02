@@ -1,0 +1,21 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Archivo', sans-serif;
+}
+.custom-cut-corner {
+  clip-path: polygon(40px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 40px);
+}
+.hide-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}

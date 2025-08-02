@@ -1,0 +1,842 @@
+// // import { useNavigate } from "react-router-dom";
+
+// // export default function SaleandSupport() {
+// //   const navigate = useNavigate();
+
+// //   return (
+// //     <>
+// //       <div className="border-b border-gray-200  "></div>
+
+// //       <section className="w-[full] h-96 px-4 py-12 md:px-12 lg:px-20 -mt-6">
+// //         <div className="grid grid-cols-1 md:grid-cols-2 ">
+// //           {/* 🔹 Card 1 - Support */}
+// //           <div className="group relative h-72 w-[500px] ml-32 custom-cut-corner p-8 cursor-pointer transition-all duration-300 bg-white hover:bg-blue-700">
+// //             <span className="inline-block text-xs bg-gray-200 text-gray-600 px-3 py-1 rounded-full mb-4 group-hover:bg-white group-hover:text-blue-700 font-medium transition">
+// //               Support
+// //             </span>
+
+// //             <h3 className="text-3xl font-medium text-black group-hover:text-white transition">
+// //               Always-on Customer Support
+// //             </h3>
+
+// //             <p className="text-sm text-gray-600 mt-2 group-hover:text-blue-100 transition">
+// //               Automate issue resolution, returns, and product inquiries.
+// //             </p>
+
+// //             <div
+// //               onClick={() => navigate("/support")}
+// //               className="absolute bottom-6 right-6 w-9 h-9 rounded-full border border-gray-300 flex items-center justify-center text-gray-500 group-hover:bg-white group-hover:text-blue-700 transition"
+// //             >
+// //               →
+// //             </div>
+// //           </div>
+
+// //           {/* 🔸 Card 2 - Sales */}
+// //           <div className="group relative p-8 w-[500px] cursor-pointer transition-all duration-300 bg-white hover:bg-blue-700">
+// //             <span className="inline-block text-xs bg-gray-200 text-gray-600 px-3 py-1 rounded-full mb-4 group-hover:bg-white group-hover:text-blue-700 font-medium transition">
+// //               Sales
+// //             </span>
+
+// //             <h3 className="text-3xl font-medium text-black group-hover:text-white transition">
+// //               On-Demand Sales Assistance
+// //             </h3>
+
+// //             <p className="text-sm text-gray-600 mt-2 group-hover:text-blue-100 transition">
+// //               Qualify leads, follow up instantly, and never miss a window.
+// //             </p>
+
+// //             <div
+// //               onClick={() => navigate("/sales")}
+// //               className="absolute bottom-6 right-6 w-9 h-9 rounded-full border border-gray-300 flex items-center justify-center text-gray-500 group-hover:bg-white group-hover:text-blue-600 transition"
+// //             >
+// //               →
+// //             </div>
+// //           </div>
+// //         </div>
+// //       </section>
+// //       <div className="border-b border-gray-200 -mt-12 "></div>
+// //     </>
+// //   );
+// // }
+// import { useNavigate } from "react-router-dom";
+
+// export default function SaleandSupport() {
+//   const navigate = useNavigate();
+
+//   return (
+//     <>
+//       <div className="border-b border-gray-200"></div>
+
+//       <section className="w-[full] h-96 px-4 py-12 md:px-12 lg:px-20 -mt-6">
+//         <div className="grid grid-cols-1 md:grid-cols-2 relative">
+//           {/* Vertical Line Between Cards - Hidden on Mobile */}
+//           <div className="hidden md:block absolute left-1/2 top-8 bottom-8 w-px bg-gray-200 transform -translate-x-1/2 z-10"></div>
+
+//           {/* 🔹 Card 1 - Support */}
+//           <div className="group relative  w-[500px] ml-32 custom-cut-corner p-8 cursor-pointer transition-all duration-300 bg-white hover:bg-blue-700">
+//             <svg
+//               viewBox="0 0 620 188"
+//               fill="none"
+//               xmlns="http://www.w3.org/2000/svg"
+//               className="mb-4"
+//             >
+//               <path
+//                 opacity="0.2"
+//                 d="M130.65 25.4621L126.085 42.5"
+//                 stroke="currentColor"
+//               ></path>
+//               <path
+//                 opacity="0.2"
+//                 d="M98.0849 147L93.3163 164.797"
+//                 stroke="currentColor"
+//               ></path>
+//               <path
+//                 opacity="0.2"
+//                 d="M162.852 44.3516L150.204 57"
+//                 stroke="currentColor"
+//               ></path>
+//               <path
+//                 opacity="0.2"
+//                 d="M74.2065 133L60.8535 146.353"
+//                 stroke="currentColor"
+//               ></path>
+//               <path
+//                 opacity="0.2"
+//                 d="M181.295 76.8122L163.802 81.5"
+//                 stroke="currentColor"
+//               ></path>
+//               <path
+//                 opacity="0.2"
+//                 d="M59.5 109.449L41.9609 114.149"
+//                 stroke="currentColor"
+//               ></path>
+//               <path
+//                 opacity="0.2"
+//                 d="M181.037 114.146L163.5 109.448"
+//                 stroke="currentColor"
+//               ></path>
+//               <path
+//                 opacity="0.2"
+//                 d="M59 81.4474L41.702 76.8125"
+//                 stroke="currentColor"
+//               ></path>
+//               <path
+//                 opacity="0.2"
+//                 d="M162.147 146.349L149 133.202"
+//                 stroke="currentColor"
+//               ></path>
+//               <path
+//                 opacity="0.2"
+//                 d="M72.5 57.207L59.6465 44.3535"
+//                 stroke="currentColor"
+//               ></path>
+//               <path
+//                 opacity="0.2"
+//                 d="M129.685 164.792L124.918 147"
+//                 stroke="currentColor"
+//               ></path>
+//               <path
+//                 opacity="0.2"
+//                 d="M96.9171 42.5L92.3504 25.4574"
+//                 stroke="currentColor"
+//               ></path>
+//               <rect
+//                 x="39.5"
+//                 y="22.5"
+//                 width="144"
+//                 height="144"
+//                 rx="72"
+//                 stroke="currentColor"
+//               ></rect>
+//               <rect
+//                 opacity="0.2"
+//                 x="48.5"
+//                 y="31.5"
+//                 width="126"
+//                 height="126"
+//                 rx="63"
+//                 stroke="currentColor"
+//               ></rect>
+//               <rect
+//                 x="57.5"
+//                 y="40.5"
+//                 width="108"
+//                 height="108"
+//                 rx="54"
+//                 stroke="currentColor"
+//               ></rect>
+//               <rect
+//                 x="94.5"
+//                 y="77.5"
+//                 width="34"
+//                 height="34"
+//                 rx="17"
+//                 stroke="currentColor"
+//               ></rect>
+//               <path
+//                 d="M0 94.5H620"
+//                 stroke="currentColor"
+//                 stroke-dasharray="3 3"
+//               ></path>
+//               <path
+//                 d="M112 0L112 188"
+//                 stroke="currentColor"
+//                 stroke-dasharray="3 3"
+//               ></path>
+//             </svg>
+//             <span className="inline-block text-xs bg-gray-200 text-gray-600 px-3 py-1 rounded-full mb-4 group-hover:bg-white group-hover:text-blue-700 font-medium transition">
+//               Support
+//             </span>
+
+//             <h3 className="text-3xl font-medium text-black group-hover:text-white transition">
+//               Always-on Customer Support
+//             </h3>
+
+//             <p className="text-sm text-gray-600 mt-2 group-hover:text-blue-100 transition">
+//               Automate issue resolution, returns, and product inquiries.
+//             </p>
+//             <div
+//               onClick={() => navigate("/support")}
+//               className="absolute bottom-6 right-6 w-9 h-9 rounded-full border border-gray-300 flex items-center justify-center text-gray-500 group-hover:bg-white group-hover:text-blue-700 transition-all duration-300 hover:transform hover:-translate-y-1 hover:-rotate-45"
+//             >
+//               →
+//             </div>
+//           </div>
+
+//           {/* 🔸 Card 2 - Sales */}
+//           <div className="group relative pl-10 p-8 w-[500px] cursor-pointer transition-all duration-300 bg-white hover:bg-blue-700 ">
+//             <svg
+//               viewBox="0 0 620 188"
+//               fill="none"
+//               xmlns="http://www.w3.org/2000/svg"
+//             >
+//               <rect
+//                 x="39.5"
+//                 y="21.5"
+//                 width="144"
+//                 height="144"
+//                 rx="72"
+//                 stroke="currentColor"
+//               ></rect>
+//               <rect
+//                 opacity="0.2"
+//                 x="61.5"
+//                 y="32.5"
+//                 width="122"
+//                 height="122"
+//                 rx="61"
+//                 stroke="currentColor"
+//               ></rect>
+//               <rect
+//                 opacity="0.2"
+//                 x="94.5"
+//                 y="49"
+//                 width="89"
+//                 height="89"
+//                 rx="44.5"
+//                 stroke="currentColor"
+//               ></rect>
+//               <rect
+//                 opacity="0.2"
+//                 x="122.5"
+//                 y="63"
+//                 width="61"
+//                 height="61"
+//                 rx="30.5"
+//                 stroke="currentColor"
+//               ></rect>
+//               <rect
+//                 opacity="0.2"
+//                 x="136.5"
+//                 y="70"
+//                 width="47"
+//                 height="47"
+//                 rx="23.5"
+//                 stroke="currentColor"
+//               ></rect>
+//               <rect
+//                 x="150.5"
+//                 y="77"
+//                 width="33"
+//                 height="33"
+//                 rx="16.5"
+//                 stroke="currentColor"
+//               ></rect>
+//               <path
+//                 d="M0 93.5H620"
+//                 stroke="currentColor"
+//                 stroke-dasharray="3 3"
+//               ></path>
+//               <line
+//                 x1="167.5"
+//                 y1="-2.18557e-08"
+//                 x2="167.5"
+//                 y2="188"
+//                 stroke="currentColor"
+//                 stroke-dasharray="3 3"
+//               ></line>
+//             </svg>
+//             <span className="inline-block text-xs bg-gray-200 text-gray-600 px-3 py-1 rounded-full mb-4 group-hover:bg-white group-hover:text-blue-700 font-medium transition">
+//               Sales
+//             </span>
+
+//             <h3 className="text-3xl font-medium text-black group-hover:text-white transition">
+//               On-Demand Sales Assistance
+//             </h3>
+
+//             <p className="text-sm text-gray-600 mt-2 group-hover:text-blue-100 transition">
+//               Qualify leads, follow up instantly, and never miss a window.
+//             </p>
+
+//             <div
+//               onClick={() => navigate("/sales")}
+//               className="absolute bottom-6 right-6 w-9 h-9 rounded-full border border-gray-300 flex items-center justify-center text-gray-500 group-hover:bg-white group-hover:text-blue-700 transition-all duration-300 hover:transform hover:-translate-y-1 hover:-rotate-45"
+//             >
+//               →
+//             </div>
+//           </div>
+//         </div>
+//       </section>
+//       <div className="border-b border-gray-200 -mt-[18px]"></div>
+//     </>
+//   );
+// }
+// import { motion } from "framer-motion";
+
+// export default function SaleandSupport() {
+//   const handleNavigation = (path) => {
+//     // Replace with your navigation logic
+//     console.log(`Navigate to: ${path}`);
+//   };
+
+//   // Simple bottom-to-up animation for the entire component
+//   const sectionVariants = {
+//     hidden: {
+//       opacity: 0,
+//       y: 60,
+//     },
+//     visible: {
+//       opacity: 1,
+//       y: 0,
+//       transition: {
+//         duration: 0.6,
+//         ease: "easeOut",
+//       },
+//     },
+//   };
+
+//   return (
+//     <>
+//       <div className="border-b border-gray-200"></div>
+
+//       <motion.section
+//         className="w-[full] h-96 px-4 py-12 md:px-12 lg:px-20 -mt-6"
+//         variants={sectionVariants}
+//         initial="hidden"
+//         whileInView="visible"
+//         viewport={{ once: true, amount: 0.3 }}
+//       >
+//         <div className="grid grid-cols-1 md:grid-cols-2 relative">
+//           {/* Vertical Line Between Cards - Hidden on Mobile */}
+//           <div className="hidden md:block absolute left-1/2 top-8 bottom-8 w-px bg-gray-200 transform -translate-x-1/2 z-10"></div>
+
+//           {/* 🔹 Card 1 - Support */}
+//           <div className="group relative w-[500px] ml-32 custom-cut-corner p-8 cursor-pointer transition-all duration-300 bg-white hover:bg-blue-700">
+//             <svg
+//               viewBox="0 0 620 188"
+//               fill="none"
+//               xmlns="http://www.w3.org/2000/svg"
+//               className="mb-4"
+//             >
+//               <path
+//                 opacity="0.2"
+//                 d="M130.65 25.4621L126.085 42.5"
+//                 stroke="currentColor"
+//               />
+//               <path
+//                 opacity="0.2"
+//                 d="M98.0849 147L93.3163 164.797"
+//                 stroke="currentColor"
+//               />
+//               <path
+//                 opacity="0.2"
+//                 d="M162.852 44.3516L150.204 57"
+//                 stroke="currentColor"
+//               />
+//               <path
+//                 opacity="0.2"
+//                 d="M74.2065 133L60.8535 146.353"
+//                 stroke="currentColor"
+//               />
+//               <path
+//                 opacity="0.2"
+//                 d="M181.295 76.8122L163.802 81.5"
+//                 stroke="currentColor"
+//               />
+//               <path
+//                 opacity="0.2"
+//                 d="M59.5 109.449L41.9609 114.149"
+//                 stroke="currentColor"
+//               />
+//               <path
+//                 opacity="0.2"
+//                 d="M181.037 114.146L163.5 109.448"
+//                 stroke="currentColor"
+//               />
+//               <path
+//                 opacity="0.2"
+//                 d="M59 81.4474L41.702 76.8125"
+//                 stroke="currentColor"
+//               />
+//               <path
+//                 opacity="0.2"
+//                 d="M162.147 146.349L149 133.202"
+//                 stroke="currentColor"
+//               />
+//               <path
+//                 opacity="0.2"
+//                 d="M72.5 57.207L59.6465 44.3535"
+//                 stroke="currentColor"
+//               />
+//               <path
+//                 opacity="0.2"
+//                 d="M129.685 164.792L124.918 147"
+//                 stroke="currentColor"
+//               />
+//               <path
+//                 opacity="0.2"
+//                 d="M96.9171 42.5L92.3504 25.4574"
+//                 stroke="currentColor"
+//               />
+//               <rect
+//                 x="39.5"
+//                 y="22.5"
+//                 width="144"
+//                 height="144"
+//                 rx="72"
+//                 stroke="currentColor"
+//               />
+//               <rect
+//                 opacity="0.2"
+//                 x="48.5"
+//                 y="31.5"
+//                 width="126"
+//                 height="126"
+//                 rx="63"
+//                 stroke="currentColor"
+//               />
+//               <rect
+//                 x="57.5"
+//                 y="40.5"
+//                 width="108"
+//                 height="108"
+//                 rx="54"
+//                 stroke="currentColor"
+//               />
+//               <rect
+//                 x="94.5"
+//                 y="77.5"
+//                 width="34"
+//                 height="34"
+//                 rx="17"
+//                 stroke="currentColor"
+//               />
+//               <path
+//                 d="M0 94.5H620"
+//                 stroke="currentColor"
+//                 strokeDasharray="3 3"
+//               />
+//               <path
+//                 d="M112 0L112 188"
+//                 stroke="currentColor"
+//                 strokeDasharray="3 3"
+//               />
+//             </svg>
+
+//             <span className="inline-block text-xs bg-gray-200 text-gray-600 px-3 py-1 rounded-full mb-4 group-hover:bg-white group-hover:text-blue-700 font-medium transition">
+//               Support
+//             </span>
+
+//             <h3 className="text-3xl font-medium text-black group-hover:text-white transition">
+//               Always-on Customer Support
+//             </h3>
+
+//             <p className="text-sm text-gray-600 mt-2 group-hover:text-blue-100 transition">
+//               Automate issue resolution, returns, and product inquiries.
+//             </p>
+
+//             <div
+//               onClick={() => handleNavigation("/support")}
+//               className="absolute bottom-6 right-6 w-9 h-9 rounded-full border border-gray-300 flex items-center justify-center text-gray-500 group-hover:bg-white group-hover:text-blue-700 transition-all duration-300 hover:transform hover:-translate-y-1 hover:-rotate-45 cursor-pointer"
+//             >
+//               →
+//             </div>
+//           </div>
+
+//           {/* 🔸 Card 2 - Sales */}
+//           <div className="group relative pl-10 p-8 w-[500px] cursor-pointer transition-all duration-300 bg-white hover:bg-blue-700">
+//             <svg
+//               viewBox="0 0 620 188"
+//               fill="none"
+//               xmlns="http://www.w3.org/2000/svg"
+//               className="mb-4"
+//             >
+//               <rect
+//                 x="39.5"
+//                 y="21.5"
+//                 width="144"
+//                 height="144"
+//                 rx="72"
+//                 stroke="currentColor"
+//               />
+//               <rect
+//                 opacity="0.2"
+//                 x="61.5"
+//                 y="32.5"
+//                 width="122"
+//                 height="122"
+//                 rx="61"
+//                 stroke="currentColor"
+//               />
+//               <rect
+//                 opacity="0.2"
+//                 x="94.5"
+//                 y="49"
+//                 width="89"
+//                 height="89"
+//                 rx="44.5"
+//                 stroke="currentColor"
+//               />
+//               <rect
+//                 opacity="0.2"
+//                 x="122.5"
+//                 y="63"
+//                 width="61"
+//                 height="61"
+//                 rx="30.5"
+//                 stroke="currentColor"
+//               />
+//               <rect
+//                 opacity="0.2"
+//                 x="136.5"
+//                 y="70"
+//                 width="47"
+//                 height="47"
+//                 rx="23.5"
+//                 stroke="currentColor"
+//               />
+//               <rect
+//                 x="150.5"
+//                 y="77"
+//                 width="33"
+//                 height="33"
+//                 rx="16.5"
+//                 stroke="currentColor"
+//               />
+//               <path
+//                 d="M0 93.5H620"
+//                 stroke="currentColor"
+//                 strokeDasharray="3 3"
+//               />
+//               <line
+//                 x1="167.5"
+//                 y1="-2.18557e-08"
+//                 x2="167.5"
+//                 y2="188"
+//                 stroke="currentColor"
+//                 strokeDasharray="3 3"
+//               />
+//             </svg>
+
+//             <span className="inline-block text-xs bg-gray-200 text-gray-600 px-3 py-1 rounded-full mb-4 group-hover:bg-white group-hover:text-blue-700 font-medium transition">
+//               Sales
+//             </span>
+
+//             <h3 className="text-3xl font-medium text-black group-hover:text-white transition">
+//               On-Demand Sales Assistance
+//             </h3>
+
+//             <p className="text-sm text-gray-600 mt-2 group-hover:text-blue-100 transition">
+//               Qualify leads, follow up instantly, and never miss a window.
+//             </p>
+
+//             <div
+//               onClick={() => handleNavigation("/sales")}
+//               className="absolute bottom-6 right-6 w-9 h-9 rounded-full border border-gray-300 flex items-center justify-center text-gray-500 group-hover:bg-white group-hover:text-blue-700 transition-all duration-300 hover:transform hover:-translate-y-1 hover:-rotate-45 cursor-pointer"
+//             >
+//               →
+//             </div>
+//           </div>
+//         </div>
+//       </motion.section>
+
+//       <div className="border-b border-gray-200 -mt-[18px]"></div>
+//     </>
+//   );
+// }
+import { motion } from "framer-motion";
+
+export default function SaleandSupport() {
+  const handleNavigation = (path) => {
+    console.log(`Navigate to: ${path}`);
+  };
+
+  const sectionVariants = {
+    hidden: { opacity: 0, y: 60 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.6, ease: "easeOut" },
+    },
+  };
+
+  return (
+    <>
+      <div className="border-b border-gray-200"></div>
+
+      <motion.section
+        className="w-full min-h-[24rem] px-4 py-12 md:px-12 lg:px-20 -mt-6"
+        variants={sectionVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        <div className="grid grid-cols-1 md:grid-cols-2 relative gap-10 md:gap-0 justify-items-center">
+          {/* Vertical Line Between Cards */}
+          <div className="hidden md:block absolute left-1/2 top-8 bottom-8 w-px bg-gray-200 transform -translate-x-1/2 z-10"></div>
+
+          {/* 🔹 Card 1 - Support */}
+          <div className="group relative w-full max-w-[500px] md:ml-32 ml-0 custom-cut-corner p-8 cursor-pointer transition-all duration-300 bg-white hover:bg-blue-700">
+            <svg
+              viewBox="0 0 620 188"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="mb-4 w-full h-auto"
+            >
+              {/* Your SVG Paths */}
+              <path
+                opacity="0.2"
+                d="M130.65 25.4621L126.085 42.5"
+                stroke="currentColor"
+              />
+              <path
+                opacity="0.2"
+                d="M98.0849 147L93.3163 164.797"
+                stroke="currentColor"
+              />
+              <path
+                opacity="0.2"
+                d="M162.852 44.3516L150.204 57"
+                stroke="currentColor"
+              />
+              <path
+                opacity="0.2"
+                d="M74.2065 133L60.8535 146.353"
+                stroke="currentColor"
+              />
+              <path
+                opacity="0.2"
+                d="M181.295 76.8122L163.802 81.5"
+                stroke="currentColor"
+              />
+              <path
+                opacity="0.2"
+                d="M59.5 109.449L41.9609 114.149"
+                stroke="currentColor"
+              />
+              <path
+                opacity="0.2"
+                d="M181.037 114.146L163.5 109.448"
+                stroke="currentColor"
+              />
+              <path
+                opacity="0.2"
+                d="M59 81.4474L41.702 76.8125"
+                stroke="currentColor"
+              />
+              <path
+                opacity="0.2"
+                d="M162.147 146.349L149 133.202"
+                stroke="currentColor"
+              />
+              <path
+                opacity="0.2"
+                d="M72.5 57.207L59.6465 44.3535"
+                stroke="currentColor"
+              />
+              <path
+                opacity="0.2"
+                d="M129.685 164.792L124.918 147"
+                stroke="currentColor"
+              />
+              <path
+                opacity="0.2"
+                d="M96.9171 42.5L92.3504 25.4574"
+                stroke="currentColor"
+              />
+              <rect
+                x="39.5"
+                y="22.5"
+                width="144"
+                height="144"
+                rx="72"
+                stroke="currentColor"
+              />
+              <rect
+                opacity="0.2"
+                x="48.5"
+                y="31.5"
+                width="126"
+                height="126"
+                rx="63"
+                stroke="currentColor"
+              />
+              <rect
+                x="57.5"
+                y="40.5"
+                width="108"
+                height="108"
+                rx="54"
+                stroke="currentColor"
+              />
+              <rect
+                x="94.5"
+                y="77.5"
+                width="34"
+                height="34"
+                rx="17"
+                stroke="currentColor"
+              />
+              <path
+                d="M0 94.5H620"
+                stroke="currentColor"
+                strokeDasharray="3 3"
+              />
+              <path
+                d="M112 0L112 188"
+                stroke="currentColor"
+                strokeDasharray="3 3"
+              />
+            </svg>
+
+            <span className="inline-block text-xs bg-gray-200 text-gray-600 px-3 py-1 rounded-full mb-4 group-hover:bg-white group-hover:text-blue-700 font-medium transition">
+              Support
+            </span>
+
+            <h3 className="text-3xl font-medium text-black group-hover:text-white transition">
+              Always-on Customer Support
+            </h3>
+
+            <p className="text-sm text-gray-600 mt-2 group-hover:text-blue-100 transition">
+              Automate issue resolution, returns, and product inquiries.
+            </p>
+
+            <div
+              onClick={() => handleNavigation("/support")}
+              className="absolute bottom-6 right-6 w-9 h-9 rounded-full border border-gray-300 flex items-center justify-center text-gray-500 group-hover:bg-white group-hover:text-blue-700 transition-all duration-300 hover:transform hover:-translate-y-1 hover:-rotate-45 cursor-pointer"
+            >
+              →
+            </div>
+          </div>
+
+          {/* 🔸 Card 2 - Sales */}
+          <div className="group relative pl-10 p-8 w-full max-w-[500px] cursor-pointer transition-all duration-300 bg-white hover:bg-blue-700">
+            <svg
+              viewBox="0 0 620 188"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="mb-4 w-full h-auto"
+            >
+              <rect
+                x="39.5"
+                y="21.5"
+                width="144"
+                height="144"
+                rx="72"
+                stroke="currentColor"
+              />
+              <rect
+                opacity="0.2"
+                x="61.5"
+                y="32.5"
+                width="122"
+                height="122"
+                rx="61"
+                stroke="currentColor"
+              />
+              <rect
+                opacity="0.2"
+                x="94.5"
+                y="49"
+                width="89"
+                height="89"
+                rx="44.5"
+                stroke="currentColor"
+              />
+              <rect
+                opacity="0.2"
+                x="122.5"
+                y="63"
+                width="61"
+                height="61"
+                rx="30.5"
+                stroke="currentColor"
+              />
+              <rect
+                opacity="0.2"
+                x="136.5"
+                y="70"
+                width="47"
+                height="47"
+                rx="23.5"
+                stroke="currentColor"
+              />
+              <rect
+                x="150.5"
+                y="77"
+                width="33"
+                height="33"
+                rx="16.5"
+                stroke="currentColor"
+              />
+              <path
+                d="M0 93.5H620"
+                stroke="currentColor"
+                strokeDasharray="3 3"
+              />
+              <line
+                x1="167.5"
+                y1="0"
+                x2="167.5"
+                y2="188"
+                stroke="currentColor"
+                strokeDasharray="3 3"
+              />
+            </svg>
+
+            <span className="inline-block text-xs bg-gray-200 text-gray-600 px-3 py-1 rounded-full mb-4 group-hover:bg-white group-hover:text-blue-700 font-medium transition">
+              Sales
+            </span>
+
+            <h3 className="text-3xl font-medium text-black group-hover:text-white transition">
+              On-Demand Sales Assistance
+            </h3>
+
+            <p className="text-sm text-gray-600 mt-2 group-hover:text-blue-100 transition">
+              Qualify leads, follow up instantly, and never miss a window.
+            </p>
+
+            <div
+              onClick={() => handleNavigation("/sales")}
+              className="absolute bottom-6 right-6 w-9 h-9 rounded-full border border-gray-300 flex items-center justify-center text-gray-500 group-hover:bg-white group-hover:text-blue-700 transition-all duration-300 hover:transform hover:-translate-y-1 hover:-rotate-45 cursor-pointer"
+            >
+              →
+            </div>
+          </div>
+        </div>
+      </motion.section>
+
+      <div className="border-b border-gray-200 -mt-[18px]"></div>
+    </>
+  );
+}
