@@ -1,7 +1,7 @@
 // components/common/Footer.jsx
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Linkedin, Youtube } from "lucide-react";
+import { Linkedin, Youtube, Instagram } from "lucide-react";
 import icon from "../../assets/logo_light.svg";
 
 const Footer = () => {
@@ -12,6 +12,9 @@ const Footer = () => {
     // Handle newsletter subscription
     console.log("Newsletter subscription:", email);
     setEmail("");
+  };
+  const handleScrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "instant" });
   };
 
   return (
@@ -27,7 +30,7 @@ const Footer = () => {
                 <img
                   src={icon}
                   alt="Logo"
-                  className="w-32 h-32 sm:w-36 sm:h-36 object-contain"
+                  className="w-32 h-32 -mt-5 sm:w-36 sm:h-36 object-contain"
                 />{" "}
               </Link>
               <p className="text-gray-400 text-sm">Future of Enterprise AI</p>
@@ -87,58 +90,63 @@ const Footer = () => {
           </div>
 
           {/* Company Links */}
-          <div className="space-y-4">
+          <div className="space-y-4 mt-6">
             <h4 className="text-blue-400 font-semibold text-xs tracking-wide">
-              COMPANY
+              RESOURCES
             </h4>
             <ul className="space-y-2">
               <li>
                 <Link
-                  to="/about"
+                  to="/"
+                  onClick={handleScrollToTop}
                   className="text-gray-300 hover:text-white transition-colors duration-200 text-sm"
                 >
-                  About Us
+                  Home
                 </Link>
               </li>
               <li>
                 <Link
-                  to="/careers"
+                  to="/company"
+                  onClick={handleScrollToTop}
                   className="text-gray-300 hover:text-white transition-colors duration-200 text-sm"
                 >
-                  Careers
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/contact-us"
-                  className="text-gray-300 hover:text-white transition-colors duration-200 text-sm"
-                >
-                  Contact Us
+                  Company
                 </Link>
               </li>
             </ul>
           </div>
 
           {/* Solutions Links */}
-          <div className="space-y-4">
+          <div className="space-y-4 mt-5">
             <h4 className="text-blue-400 font-semibold text-xs tracking-wide">
-              SOLUTIONS
+              LEGAL
             </h4>
             <ul className="space-y-2">
               <li>
                 <Link
-                  to="/sales"
+                  to="/terms"
+                  onClick={handleScrollToTop}
                   className="text-gray-300 hover:text-white transition-colors duration-200 text-sm"
                 >
-                  Sales
+                  Terms & conditions
                 </Link>
               </li>
               <li>
                 <Link
-                  to="/support"
+                  to="/privacy"
+                  onClick={handleScrollToTop}
                   className="text-gray-300 hover:text-white transition-colors duration-200 text-sm"
                 >
-                  Support
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/refund"
+                  onClick={handleScrollToTop}
+                  className="text-gray-300 hover:text-white transition-colors duration-200 text-sm"
+                >
+                  Refund Policy
                 </Link>
               </li>
             </ul>
@@ -147,7 +155,7 @@ const Footer = () => {
           {/* Industry & Resources */}
           <div className="space-y-6">
             {/* Industry */}
-            <div className="space-y-4">
+            {/* <div className="space-y-4">
               <h4 className="text-blue-400 font-semibold text-xs tracking-wide">
                 INDUSTRY
               </h4>
@@ -193,24 +201,24 @@ const Footer = () => {
                   </Link>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
 
         {/* Resources & Legal Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mt-8 pt-6 border-t border-gray-800">
           {/* Resources */}
-          <div className="space-y-4">
+          {/* <div className="space-y-4">
             <h4 className="text-blue-400 font-semibold text-xs tracking-wide">
               RESOURCES
             </h4>
             <ul className="space-y-2">
               <li>
                 <Link
-                  to="/resources/success-stories"
+                  to="/"
                   className="text-gray-300 hover:text-white transition-colors duration-200 text-sm"
                 >
-                  Success Stories
+                  Home
                 </Link>
               </li>
               <li>
@@ -218,46 +226,14 @@ const Footer = () => {
                   to="/resources/ai-explained"
                   className="text-gray-300 hover:text-white transition-colors duration-200 text-sm"
                 >
-                  AI Explained
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/resources/use-cases"
-                  className="text-gray-300 hover:text-white transition-colors duration-200 text-sm"
-                >
-                  Use Cases
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/resources/blogs"
-                  className="text-gray-300 hover:text-white transition-colors duration-200 text-sm"
-                >
-                  Blogs
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/resources/webinars"
-                  className="text-gray-300 hover:text-white transition-colors duration-200 text-sm"
-                >
-                  Webinars
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/resources/knowledge-hub"
-                  className="text-gray-300 hover:text-white transition-colors duration-200 text-sm"
-                >
-                  Knowledge Hub
+                  Company
                 </Link>
               </li>
             </ul>
-          </div>
+          </div> */}
 
           {/* Legal */}
-          <div className="space-y-4">
+          {/* <div className="space-y-4">
             <h4 className="text-blue-400 font-semibold text-xs tracking-wide">
               LEGAL
             </h4>
@@ -280,22 +256,14 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/legal/dpa"
+                  to=""
                   className="text-gray-300 hover:text-white transition-colors duration-200 text-sm"
                 >
-                  DPA
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/legal/baa"
-                  className="text-gray-300 hover:text-white transition-colors duration-200 text-sm"
-                >
-                  BAA
+                  Refund Policy
                 </Link>
               </li>
             </ul>
-          </div>
+          </div> */}
 
           {/* Social & Copyright */}
           <div className="lg:col-span-2 space-y-6">
@@ -330,6 +298,14 @@ const Footer = () => {
                 className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700 transition-colors duration-200"
               >
                 <Youtube className="w-5 h-5" />
+              </a>
+              <a
+                href="https://youtube.com/nurix"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700 transition-colors duration-200"
+              >
+                <Instagram className="w-5 h-5" />
               </a>
             </div>
 

@@ -1,7 +1,7 @@
 import Hero from "../components/sections/Hero";
-import Features from "../components/sections/Features";
+import Capabilities from "../components/sections/Capabilities";
 import Enterprise from "../components/sections/Enterprise";
-import Investors from "../components/sections/Investors";
+import TeamBacking from "../components/sections/TeamBacking";
 import Footer from "../components/sections/Footer";
 import SaleandSupport from "../components/sections/SaleandSupport";
 import CaseStudiesSection from "../components/sections/CaseStudy";
@@ -11,10 +11,10 @@ const Home = () => {
     <div>
       <Hero />
       <SaleandSupport />
-      <Features />
-      <CaseStudiesSection />
-      <Enterprise />
-      <Investors />
+      <Capabilities />
+      {/* <CaseStudiesSection /> */}
+      {/* <Enterprise /> */}
+      <TeamBacking />
       <Footer />
     </div>
   );

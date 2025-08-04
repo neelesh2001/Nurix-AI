@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { Linkedin } from "lucide-react";
 import SimpleFooter from "../components/sections/SimpleFooter";
 import Navbar from "../components/common/Navbar";
+import Footer from "../components/sections/Footer";
 
 const Company = () => {
   const observerRef = useRef(null);
@@ -92,22 +93,22 @@ const Company = () => {
           <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start gap-6 lg:gap-8">
             {/* Left side - Main heading */}
             <div className="lg:w-1/2">
-              <p className="text-gray-600 text-base sm:text-lg mb-6 sm:mb-8">
+              <p className="text-gray-600 text-base sm:text-lg  sm:mb-8">
                 Our Story
               </p>
               <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium text-gray-900 leading-tight mt-10">
-                Putting <span className="">you</span>
                 <br />
-                at the centre of
-                <br />
-                healthcare
+                Built in India,Trusted Globally — AI-Powered Healthcare with You
+                at the Core
               </h1>
             </div>
 
             {/* Right side - Tagline */}
-            <div className="lg:w-1/2 lg:text-right lg:pt-20 mt-8 sm:mt-12 lg:mt-40 lg:mr-20">
+            <div className="lg:w-[600px] lg:text-right lg:pt-20 mt-14 sm:mt-12 lg:mt-40 lg:mr-20 pl-40">
               <p className="text-gray-600 text-base sm:text-lg font-normal">
-                Building from India, for the world
+                We serve 5M+ patient interactions a year and counting — Olli AI
+                was designed from the ground up to empower real-world care, with
+                empathy, intelligence, and global scalability.
               </p>
             </div>
           </div>
@@ -132,46 +133,28 @@ const Company = () => {
           {/* Right side - Story content */}
           <div className="space-y-4 sm:space-y-6 ">
             <p className="text-gray-900 text-sm sm:text-sm leading-relaxed">
-              Olli is your health companion AI:{" "}
               <strong className="font-semibold">
-                "designed not to replace doctors, but to offer clarity and
-                reassurance in the chaotic silence between visits"
+                "Your health deserves better than silence between visits. "
               </strong>
               .
             </p>
 
             <p className="text-gray-700 text-sm sm:text-sm leading-relaxed">
-              We're a multi-disciplinary team of doctors, engineers, and data
-              scientists who've lived both sides of the healthcare experience:
-              as practitioners and as patients. Our work is grounded in a deep
-              understanding of how healthcare actually unfolds in the real
-              world: with ambiguity, overwhelm, and often, silence.
+              Olli AI is your intelligent healthcare companion — not a chatbot,
+              not a virtual doctor — but an always-available ally. Born from
+              personal pain and professional insight, Olli was created after a
+              4-month diagnostic delay experienced by one of our founders. What
+              followed was an AI platform trained not just on symptoms, but on
+              human reality: ambiguity, overwhelm, and urgency.
             </p>
 
             <p className="text-gray-700 text-sm sm:text-sm leading-relaxed">
-              The idea for August began in 2022, after one of our founders,
-              Anuruddh, went through a painful four-month misdiagnosis for
-              rheumatoid arthritis. Despite access to doctors, lab tests, and
-              second opinions, the answers never quite added up. It took his own
-              deep dive into reports and symptoms to uncover the real issue: a
-              simple nutritional imbalance. The system hadn't failed
-              maliciously; it had just left him to figure it out alone.
+              Built by a team of doctors, engineers, and
+              patients-turned-creators, Olli now supports doctors and patients
+              across 800+ clinics and 25+ hospitals — decoding reports,
+              explaining medical terms, and weaving together fragmented data
+              with context-aware AI.
             </p>
-
-            <p className="text-gray-700 text-sm sm:text-sm leading-relaxed">
-              That experience wasn't rare. It was far too common.
-            </p>
-
-            <p className="text-gray-700 text-sm sm:text-sm leading-relaxed">
-              So we started building. Not a chatbot. Not a virtual doctor. But a
-              companion: one that could read prescriptions, interpret lab
-              reports, explain medical terms, and help you piece things together
-              when no one else has the time. We began with computational
-              algorithms that make sense of scattered health data and are now
-              building toward a future where AI becomes a deeply empathetic
-              force in healthcare.
-            </p>
-
             <p className="text-gray-700 text-sm sm:text-sm leading-relaxed">
               We believe AI isn't just about speed or automation. It's about not
               missing the thing that matters, because someone was too tired, too
@@ -216,8 +199,8 @@ const Company = () => {
                 Passion
               </h3>
               <p className="text-gray-600 leading-relaxed text-xs sm:text-xs">
-                We care deeply about your health and the problem that we are
-                solving.
+                We're relentless about transforming care — Olli has already
+                helped over 200,000+ patients through its AI-driven insights.
               </p>
             </div>
 
@@ -244,7 +227,8 @@ const Company = () => {
                 Customer Focus
               </h3>
               <p className="text-gray-600 leading-relaxed text-xs sm:text-xs">
-                Whatever you need, whenever you need - we are here to help.
+                Whether you're a doctor, patient, or caregiver — our 24x7 agent
+                availability ensures 99.9% uptime, always ready to help.{" "}
               </p>
             </div>
 
@@ -271,9 +255,8 @@ const Company = () => {
                 Transparency
               </h3>
               <p className="text-gray-600 leading-relaxed text-xs sm:text-sm">
-                We accept our strengths and flaws. We know August has a long way
-                to go and we'll keep building until it's the way you look at
-                your health.
+                From AI explainability to ethical data use, we lead with
+                honesty. All AI actions are auditable and medically reviewed.
               </p>
             </div>
           </div>
@@ -285,21 +268,24 @@ const Company = () => {
             {/* Left side - Text content */}
             <div>
               <p className="text-gray-600 text-sm sm:text-base mb-6 sm:mb-8">
-                Benchmarking Successful
+                Benchmarking
               </p>
               <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium text-gray-900 leading-tight mb-6 sm:mb-8">
-                <span>Olli is the</span>
+                <span>Outperforming Global </span>
                 <br />
-                <span>top Health AI</span>
-                <br />
-                <span>in the world</span>
+                <span>Benchmarks</span>
               </h2>
               <p className="text-gray-700 text-sm sm:text-base mb-6 sm:mb-8 max-w-md">
-                We scored 94.8% in the US Medical Licensing Examination. This is
-                one of the standard benchmarks used for HealthAIs. Check the
-                image to see how August compares
+                Olli AI achieved 94.8% accuracy in the USMLE (Step 1),
+                outperforming OpenEvidence, Hippocratic AI, and GPT-4. This
+                makes Olli one of the most clinically accurate Health AIs ever
+                benchmarked.
+                {/* <br />
+                When your AI partner is smarter than most
+                physicians-in-training, you can trust it to support real
+                decisions. */}
               </p>
-              <button className="inline-flex text-gray-900 font-medium text-sm">
+              {/* <button className="inline-flex text-gray-900 font-medium text-sm">
                 Learn More
                 <svg
                   className="ml-2 w-4 h-4 sm:w-5 sm:h-5"
@@ -314,7 +300,7 @@ const Company = () => {
                     d="M17 8l4 4m0 0l-4 4m4-4H3"
                   />
                 </svg>
-              </button>
+              </button> */}
             </div>
 
             {/* Right side - Benchmark chart */}
@@ -394,66 +380,124 @@ const Company = () => {
             Our Team
           </p>
           <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium text-gray-900 leading-tight mb-12 sm:mb-16">
-            The
+            Meet the Minds Behind
             <br />
-            <span className="">team behind</span> Olli.AI
+            <span className=""></span> Olli
           </h2>
+          <p className="text-gray-700 text-sm ml-60 sm:text-base mb-6 sm:mb-8 max-w-[650px]">
+            Founded by a doctor-engineer duo, Olli AI blends healthcare depth
+            with technical brilliance — ensuring your care is powered by
+            compassion, logic, and relentless innovation.
+          </p>
 
           {/* Team Members */}
-          <div className="flex flex-col sm:flex-row justify-center gap-8 sm:gap-12 lg:gap-28 mt-16 sm:mt-20 lg:mt-24 max-w-6xl mx-auto mb-12 sm:mb-16">
-            {/* Aayush Garg */}
-            <div className="text-center animate-on-scroll stagger-delay-1">
-              <div className="mb-4 sm:mb-6">
+          <div className=" sm:flex-row justify-center gap-8 sm:gap-12 lg:gap-28 mt-16 sm:mt-20 lg:mt-24  mx-auto mb-12 sm:mb-16">
+            <div className=" flex gap-10 text-center animate-on-scroll stagger-delay-1">
+              <div className="mb-4 sm:mb-6 ">
+                <img
+                  src="https://media.licdn.com/dms/image/v2/D5603AQGgcg3ipamtsQ/profile-displayphoto-shrink_800_800/B56ZTPlNYsHwAg-/0/1738649427626?e=1756339200&v=beta&t=REq92zQiJ0oET3sz3Y6M6fQ4ZcrVw1fzT5K9L6DOwDQ"
+                  alt="Aayush Grag"
+                  className="w-96 h-60 sm:w-60 sm:h-72 lg:w-80 lg:h-96 object-cover rounded-2xl mx-auto shadow-lg"
+                />
+                <h3 className="text-xl mt-5 sm:text-2xl font-medium text-gray-900 mb-2">
+                  Varun Grag
+                </h3>
+                <p className="text-gray-600 mb-3 sm:mb-4 text-sm sm:text-base">
+                  CEO, Olli AI, DocPlix
+                </p>
+                <a
+                  href="https://www.linkedin.com/in/aayush-garg-3123a5b9/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-gray-500 transition-colors inline-block"
+                >
+                  <Linkedin className="w-5 h-5 sm:w-6 sm:h-6 bg-gray-200 p-1 border rounded-sm" />
+                </a>
+              </div>
+
+              <div className="text-gray-700 w-[700px] mt-5 ml-44 text-sm  sm:text-base mb-6 sm:mb-8 ">
+                A medical doctor and strategic leader, Dr. Varun brings clinical
+                depth and operational foresight to Olli AI. With years of
+                experience working at the intersection of healthcare delivery,
+                policy, and patient advocacy, he ensures the platform stays
+                rooted in real-world patient needs and clinical relevance
+                <br />
+                <br />
+                As CEO of DocPlix and now Olli AI, he has led initiatives across
+                public health, digital transformation, and AI adoption at scale
+                — especially in underserved regions. His goal: to build
+                technology that augments doctors, not replaces them, and creates
+                more clarity in every patient journey.
+                <br />
+                <br />
+                <p className="mr-12">
+                  <span className="font-bold ">Focus Areas</span>: Generative
+                  AI, agent architecture, secure infrastructure, and
+                  multilingual conversational systems.
+                </p>
+                <br />
+                <p className="mr-12">
+                  <span className="font-bold ">Vision</span>: A world where
+                  every clinical decision and engagement is backed by
+                  intelligence, empathy, and context.
+                </p>
+              </div>
+            </div>
+            <div className=" flex mt-10 text-center animate-on-scroll stagger-delay-1">
+              <div className="mb-4 sm:mb-6 ">
                 <img
                   src="https://media.licdn.com/dms/image/v2/D5603AQEi6cXTARR9uw/profile-displayphoto-shrink_800_800/B56ZSdCP4wGsAc-/0/1737801400572?e=1756339200&v=beta&t=HKM70ABdvRj_yMdHu5I_j0Q-AR8xPZcFVLx0C9Z-GOM"
                   alt="Aayush Grag"
-                  className="w-48 h-60 sm:w-60 sm:h-72 lg:w-80 lg:h-96 object-cover rounded-2xl mx-auto shadow-lg"
+                  className="w-96 h-60 sm:w-60 sm:h-72 lg:w-80 lg:h-96 object-cover rounded-2xl mx-auto shadow-lg"
                 />
+                <h3 className="text-xl mt-5 sm:text-2xl font-medium text-gray-900 mb-2">
+                  Aayush Grag
+                </h3>
+                <p className="text-gray-600 mb-3 sm:mb-4 text-sm sm:text-base">
+                  Founder & CTO, Olli AI, DocPlix
+                </p>
+                <a
+                  href="https://www.linkedin.com/in/aayush-garg-3123a5b9/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-gray-500 transition-colors inline-block"
+                >
+                  <Linkedin className="w-5 h-5 sm:w-6 sm:h-6 bg-gray-200 p-1 border rounded-sm" />
+                </a>
               </div>
-              <h3 className="text-xl sm:text-2xl font-medium text-gray-900 mb-2">
-                Aayush Grag
-              </h3>
-              <p className="text-gray-600 mb-3 sm:mb-4 text-sm sm:text-base">
-                Founder and CTO
-              </p>
-              <a
-                href="https://www.linkedin.com/in/aayush-garg-3123a5b9/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-600 hover:text-gray-500 transition-colors inline-block"
-              >
-                <Linkedin className="w-5 h-5 sm:w-6 sm:h-6 bg-gray-200 p-1 border rounded-sm" />
-              </a>
-            </div>
 
-            {/* Samarth Sharma */}
-            <div className="text-center animate-on-scroll stagger-delay-2">
-              <div className="mb-4 sm:mb-6">
-                <img
-                  src="https://media.licdn.com/dms/image/v2/D5603AQGgcg3ipamtsQ/profile-displayphoto-shrink_800_800/B56ZTPlNYsHwAg-/0/1738649427626?e=1756339200&v=beta&t=REq92zQiJ0oET3sz3Y6M6fQ4ZcrVw1fzT5K9L6DOwDQ"
-                  alt="Varun Garg"
-                  className="w-48 h-60 sm:w-60 sm:h-72 lg:w-80 lg:h-96 object-cover rounded-2xl mx-auto shadow-lg"
-                />
+              <div className="text-gray-700 w-[700px] mt-7 ml-44 text-sm  sm:text-base mb-6 sm:mb-8 ">
+                Aayush is a tech entrepreneur and AI architect with a mission to
+                transform how healthcare systems think, act, and respond. With a
+                deep background in building scalable SaaS and AI platforms, he
+                leads Olli AI’s product and engineering teams to develop
+                intelligent, secure, and empathetic digital agents for clinics
+                and hospitals.
+                <br />
+                <br />
+                Aayush previously built DocPlix, a fast-growing healthtech
+                company with 4000+ doctors and 2500+ healthcare organisations on
+                board, and is now spearheading the AiDa Suite (AI + Data) —
+                bringing real-time AI agents to the frontlines of healthcare.
+                <br />
+                <br />
+                <span className="font-bold">
+                  He believes great health AI isn’t just smart — it should be
+                  trusted, transparent, and truly helpful.
+                </span>
+                <br />
+                <br />
+                <p className="mr-12">
+                  <span className="font-bold ">Focus Areas</span>: Generative
+                  AI, agent architecture, secure infrastructure, and
+                  multilingual conversational systems.
+                </p>
               </div>
-              <h3 className="text-xl sm:text-2xl font-medium text-gray-900 mb-2">
-                Dr. Varun Garg
-              </h3>
-              <p className="text-gray-600 mb-3 sm:mb-4 text-sm sm:text-base">
-                CEO
-              </p>
-              <a
-                href="https://www.linkedin.com/in/dr-varun-garg-903110a4/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-600 hover:text-gray-500 transition-colors inline-block"
-              >
-                <Linkedin className="w-5 h-5 sm:w-6 sm:h-6 bg-gray-200 p-1 border rounded-sm" />
-              </a>
             </div>
           </div>
         </div>
       </div>
-      <SimpleFooter />
+      <Footer />
     </div>
   );
 };

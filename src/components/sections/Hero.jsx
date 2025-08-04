@@ -1,48 +1,76 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const HeroSection = () => {
+  const [activeTab, setActiveTab] = useState("Convert");
+
+  const tabs = [
+    { name: "Convert", video: "https://www.w3schools.com/html/mov_bbb.mp4" },
+    { name: "Engage", video: "https://www.w3schools.com/html/movie.mp4" },
+    { name: "Delight", video: "https://www.w3schools.com/html/mov_bbb.mp4" },
+  ];
+
   return (
-    <section className="bg-white min-h-[770px] flex items-center">
-      <div className="max-w-7xl mx-auto w-full flex flex-col lg:flex-row items-center lg:items-stretch">
-        {/* Left Content */}
-        <div className="flex-1 flex flex-col justify-center text-center lg:text-left px-6 lg:px-12 py-10 order-1 lg:order-1">
-          <h3 className="text-blue-600 font-semibold text-xl mb-3">
-            Jotform AI Agents
-          </h3>
-          <h1 className="text-3xl md:text-5xl font-semibold text-gray-900 leading-snug mb-6">
-            The Future of <br /> Customer Service
-          </h1>
-          <p className="text-gray-700 text-lg md:text-xl mb-10 max-w-lg mx-auto lg:mx-0">
-            Imagine a world where you can respond instantly to any customer,
-            anytime, anywhere.
-          </p>
+    <section className="bg-white min-h-screen flex flex-col items-center justify-center px-6 lg:px-20 py-16">
+      {/* Heading */}
+      <div className="text-center max-w-4xl mx-auto">
+        <span className="inline-block text-xs font-normal text-gray-600 bg-gray-100 px-3 py-1 rounded-full mb-4">
+          All-in-One AI Front Desk
+        </span>
+        <h1 className="text-3xl md:text-5xl font-medium leading-snug text-gray-900">
+          AI Agents That Talk, Remind & Book
+        </h1>
+        <p className="mt-6 text-gray-600 text-sm md:text-base">
+          Deliver care instructions, schedule appointments, answer queries,
+          collect feedback — all automated with multilingual Voice and Whatsapp
+          AI agents.
+        </p>
 
-          <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
-            <Link
-              to="/contact-us"
-              className="bg-blue-600 text-white medium px-7 py-4 rounded-xl shadow-lg transition"
+        {/* Buttons */}
+        <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+          <Link
+            to="/contact-us"
+            className="px-6 py-3 border border-gray-400 text-gray-900 rounded-md hover:bg-gray-100 transition"
+          >
+            Get Started for Free
+          </Link>
+        </div>
+      </div>
+
+      {/* Video Section */}
+      <div className="relative mt-16 w-full max-w-6xl bg-gradient-to-r from-purple-200 to-blue-200 rounded-md shadow-lg overflow-hidden">
+        {/* Tabs at Top Right */}
+        <div
+          className="absolute bg-white flex space-x-16 px-6 py-2 rounded-sm border-b border-gray-200 z-20
+                left-1/2 transform -translate-x-1/2 md:left-[820px] md:translate-x-0 "
+        >
+          {tabs.map((tab) => (
+            <button
+              key={tab.name}
+              onClick={() => setActiveTab(tab.name)}
+              className={`relative pb-2 text-sm md:text-base font-medium transition-colors ${
+                activeTab === tab.name
+                  ? "text-blue-600"
+                  : "text-gray-400 hover:text-gray-600"
+              }`}
             >
-              Create Your AI Agent
-            </Link>
-            {/* <button className="border border-gray-300 text-gray-800 px-7 py-4 rounded-xl hover:bg-gray-100 transition">
-              Demo AI Agents
-            </button> */}
-          </div>
-
-          <p className="mt-5 text-black font-medium text-lg ml-3 ">
-            – it’s free! <span className="text-xl"></span>
-          </p>
+              {tab.name}
+              {activeTab === tab.name && (
+                <span className="absolute left-0 -bottom-[1px] w-full h-[2px] bg-blue-600 rounded-full transition-all duration-300"></span>
+              )}
+            </button>
+          ))}
         </div>
 
-        {/* Right Image */}
-        <div className="flex-1 order-2 lg:order-2 w-full h-[50vh] lg:h-auto">
-          <img
-            src="https://cdn.jotfor.ms/p/ai-agents/assets/img-min/homepage/ai-agent-sara.png?v=1740119955"
-            alt="Hero Illustration"
-            className="w-full h-full object-cover"
-          />
-        </div>
+        {/* Video Placeholder */}
+        <video
+          key={activeTab}
+          className="w-full h-[350px] md:h-[500px] object-cover z-10"
+          src={tabs.find((tab) => tab.name === activeTab).video}
+          autoPlay
+          muted
+          loop
+        ></video>
       </div>
     </section>
   );

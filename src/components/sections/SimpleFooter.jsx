@@ -11,6 +11,9 @@ const SimpleFooter = () => {
     console.log("Newsletter subscription:", email);
     setEmail("");
   };
+  const handleScrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "instant" });
+  };
 
   return (
     <footer className="bg-white py-16 px-4 sm:px-6 lg:px-8 border-t border-gray-100">
@@ -23,7 +26,7 @@ const SimpleFooter = () => {
               <img
                 src={icon}
                 alt="Logo"
-                className="w-24 h-24 sm:w-30 sm:h-30 object-contain"
+                className="w-24 h-24 -mt-5 sm:w-30 sm:h-30 object-contain"
               />
             </Link>
 
@@ -54,63 +57,25 @@ const SimpleFooter = () => {
           {/* Company Links */}
           <div>
             <h4 className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-6">
-              COMPANY
+              RESOURCES
             </h4>
             <ul className="space-y-4 text-xs">
               <li>
                 <Link
+                  to="/"
+                  onClick={handleScrollToTop}
+                  className="text-gray-700 hover:text-gray-900 transition-colors duration-200"
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
                   to="/company"
+                  onClick={handleScrollToTop}
                   className="text-gray-700 hover:text-gray-900 transition-colors duration-200"
                 >
                   Company
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/blog"
-                  className="text-gray-700 hover:text-gray-900 transition-colors duration-200"
-                >
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/resources"
-                  className="text-gray-700 hover:text-gray-900 transition-colors duration-200"
-                >
-                  Resources
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/privacy-policy"
-                  className="text-gray-700 hover:text-gray-900 transition-colors duration-200"
-                >
-                  Privacy Policy
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/dpa"
-                  className="text-gray-700 hover:text-gray-900 transition-colors duration-200"
-                >
-                  DPA
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/baa"
-                  className="text-gray-700 hover:text-gray-900 transition-colors duration-200"
-                >
-                  BAA
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/contact-us"
-                  className="text-gray-700 hover:text-gray-900 transition-colors duration-200"
-                >
-                  Contact Us
                 </Link>
               </li>
             </ul>
@@ -119,31 +84,34 @@ const SimpleFooter = () => {
           {/* Solutions Links */}
           <div>
             <h4 className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-6">
-              SOLUTIONS
+              LEGAL
             </h4>
             <ul className="space-y-4 text-xs">
               <li>
                 <Link
-                  to="/sales"
+                  to="/terms"
+                  onClick={handleScrollToTop}
                   className="text-gray-700 hover:text-gray-900 transition-colors duration-200"
                 >
-                  Sales
+                  Terms & Conditions
                 </Link>
               </li>
               <li>
                 <Link
-                  to="/support"
+                  to="/priacy"
+                  onClick={handleScrollToTop}
                   className="text-gray-700 hover:text-gray-900 transition-colors duration-200"
                 >
-                  Support
+                  Privacy Policy
                 </Link>
               </li>
               <li>
                 <Link
-                  to="/why-nurix"
+                  to="/refund"
+                  onClick={handleScrollToTop}
                   className="text-gray-700 hover:text-gray-900 transition-colors duration-200"
                 >
-                  Why Olli?
+                  Refund Policy
                 </Link>
               </li>
             </ul>
@@ -183,6 +151,16 @@ const SimpleFooter = () => {
                   className="text-gray-700 hover:text-gray-900 transition-colors duration-200"
                 >
                   Youtube
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://youtube.com/nurix"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-700 hover:text-gray-900 transition-colors duration-200"
+                >
+                  Instagram
                 </a>
               </li>
             </ul>
