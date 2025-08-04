@@ -1,58 +1,51 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
-const VoiceAIHero = () => {
+const HeroSection = () => {
   return (
-    <section className="min-h-[750px] bg-white flex items-center justify-center px-4 sm:px-6 lg:px-8 relative overflow-hidden">
-      {/* Content */}
-      <div className="relative z-10 text-center max-w-6xl mx-auto ">
-        <motion.h1
-          className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-normal text-gray-900 mb-8 leading-tight"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-        >
-          Supercharge your
-          <br />
-          <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-blue-400 bg-clip-text text-transparent">
-            Call Operations
-          </span>{" "}
-          with Voice AI
-        </motion.h1>
+    <section className="bg-white min-h-[770px] flex items-center">
+      <div className="max-w-7xl mx-auto w-full flex flex-col lg:flex-row items-center lg:items-stretch">
+        {/* Left Content */}
+        <div className="flex-1 flex flex-col justify-center text-center lg:text-left px-6 lg:px-12 py-10 order-1 lg:order-1">
+          <h3 className="text-blue-600 font-semibold text-xl mb-3">
+            Jotform AI Agents
+          </h3>
+          <h1 className="text-3xl md:text-5xl font-semibold text-gray-900 leading-snug mb-6">
+            The Future of <br /> Customer Service
+          </h1>
+          <p className="text-gray-700 text-lg md:text-xl mb-10 max-w-lg mx-auto lg:mx-0">
+            Imagine a world where you can respond instantly to any customer,
+            anytime, anywhere.
+          </p>
 
-        <motion.p
-          className="text-base sm:text-lg md:text-xl text-gray-600 mb-12 leading-relaxed max-w-3xl mx-auto"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-        >
-          Discover the new way to build, test, deploy, and monitor
-          <br className="hidden sm:block" />
-          production-ready AI voice agents at scale.
-        </motion.p>
+          <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
+            <Link
+              to="/contact-us"
+              className="bg-blue-600 text-white medium px-7 py-4 rounded-xl shadow-lg transition"
+            >
+              Create Your AI Agent
+            </Link>
+            {/* <button className="border border-gray-300 text-gray-800 px-7 py-4 rounded-xl hover:bg-gray-100 transition">
+              Demo AI Agents
+            </button> */}
+          </div>
 
-        <motion.div
-          className="flex flex-col sm:flex-row gap-4 justify-center mb-16"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-        >
-          <motion.button
-            className="bg-black text-white px-5 py-2 rounded-lg font-medium text-base  "
-            whileTap={{ scale: 0.95 }}
-          >
-            TRY FOR FREE
-          </motion.button>
-          <motion.button
-            className="border-2 border-gray-300 text-gray-700 px-5 py-2 rounded-lg font-medium text-base tracking-wide hover:bg-gray-50 hover:border-gray-400 transition-all duration-200"
-            whileTap={{ scale: 0.95 }}
-          >
-            CONTACT SALES
-          </motion.button>
-        </motion.div>
+          <p className="mt-5 text-black font-medium text-lg ml-3 ">
+            – it’s free! <span className="text-xl"></span>
+          </p>
+        </div>
+
+        {/* Right Image */}
+        <div className="flex-1 order-2 lg:order-2 w-full h-[50vh] lg:h-auto">
+          <img
+            src="https://cdn.jotfor.ms/p/ai-agents/assets/img-min/homepage/ai-agent-sara.png?v=1740119955"
+            alt="Hero Illustration"
+            className="w-full h-full object-cover"
+          />
+        </div>
       </div>
     </section>
   );
 };
 
-export default VoiceAIHero;
+export default HeroSection;
