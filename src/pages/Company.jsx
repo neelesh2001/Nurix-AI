@@ -384,20 +384,21 @@ const Company = () => {
             <br />
             <span className=""></span> Olli
           </h2>
-          <p className="text-gray-700 text-sm ml-60 sm:text-base mb-6 sm:mb-8 max-w-[650px]">
+          <p className="text-gray-700 text-sm sm:text-base mb-6 sm:mb-8 max-w-[650px] mx-auto px-4">
             Founded by a doctor-engineer duo, Olli AI blends healthcare depth
             with technical brilliance — ensuring your care is powered by
             compassion, logic, and relentless innovation.
           </p>
 
           {/* Team Members */}
-          <div className=" sm:flex-row justify-center gap-8 sm:gap-12 lg:gap-28 mt-16 sm:mt-20 lg:mt-24  mx-auto mb-12 sm:mb-16">
-            <div className=" flex gap-10 text-center animate-on-scroll stagger-delay-1">
-              <div className="mb-4 sm:mb-6 ">
+          <div className="flex flex-col gap-16 sm:gap-20 lg:gap-28 mt-16 sm:mt-20 lg:mt-24 mx-auto mb-12 sm:mb-16">
+            {/* Member 1 */}
+            <div className="flex flex-col lg:flex-row items-center lg:items-start text-center lg:text-left animate-on-scroll stagger-delay-1 gap-8 lg:gap-12">
+              <div className="mb-4 sm:mb-6 flex-shrink-0">
                 <img
                   src="https://media.licdn.com/dms/image/v2/D5603AQGgcg3ipamtsQ/profile-displayphoto-shrink_800_800/B56ZTPlNYsHwAg-/0/1738649427626?e=1756339200&v=beta&t=REq92zQiJ0oET3sz3Y6M6fQ4ZcrVw1fzT5K9L6DOwDQ"
-                  alt="Aayush Grag"
-                  className="w-96 h-60 sm:w-60 sm:h-72 lg:w-80 lg:h-96 object-cover rounded-2xl mx-auto shadow-lg"
+                  alt="Varun Grag"
+                  className="w-60 h-72 lg:w-80 lg:h-96 object-cover rounded-2xl mx-auto shadow-lg"
                 />
                 <h3 className="text-xl mt-5 sm:text-2xl font-medium text-gray-900 mb-2">
                   Varun Grag
@@ -415,12 +416,12 @@ const Company = () => {
                 </a>
               </div>
 
-              <div className="text-gray-700 w-[700px] mt-5 ml-44 text-sm  sm:text-base mb-6 sm:mb-8 ">
+              <div className="text-gray-700 text-sm sm:text-base leading-relaxed max-w-xl lg:max-w-2xl px-4 lg:px-0">
                 A medical doctor and strategic leader, Dr. Varun brings clinical
                 depth and operational foresight to Olli AI. With years of
                 experience working at the intersection of healthcare delivery,
                 policy, and patient advocacy, he ensures the platform stays
-                rooted in real-world patient needs and clinical relevance
+                rooted in real-world patient needs and clinical relevance.
                 <br />
                 <br />
                 As CEO of DocPlix and now Olli AI, he has led initiatives across
@@ -430,25 +431,27 @@ const Company = () => {
                 more clarity in every patient journey.
                 <br />
                 <br />
-                <p className="mr-12">
-                  <span className="font-bold ">Focus Areas</span>: Generative
-                  AI, agent architecture, secure infrastructure, and
-                  multilingual conversational systems.
+                <p>
+                  <span className="font-bold">Focus Areas</span>: Generative AI,
+                  agent architecture, secure infrastructure, and multilingual
+                  conversational systems.
                 </p>
                 <br />
-                <p className="mr-12">
-                  <span className="font-bold ">Vision</span>: A world where
-                  every clinical decision and engagement is backed by
-                  intelligence, empathy, and context.
+                <p>
+                  <span className="font-bold">Vision</span>: A world where every
+                  clinical decision and engagement is backed by intelligence,
+                  empathy, and context.
                 </p>
               </div>
             </div>
-            <div className=" flex mt-10 text-center animate-on-scroll stagger-delay-1">
-              <div className="mb-4 sm:mb-6 ">
+
+            {/* Member 2 */}
+            <div className="flex flex-col lg:flex-row items-center lg:items-start text-center lg:text-left animate-on-scroll stagger-delay-1 gap-8 lg:gap-12">
+              <div className="mb-4 sm:mb-6 flex-shrink-0">
                 <img
                   src="https://media.licdn.com/dms/image/v2/D5603AQEi6cXTARR9uw/profile-displayphoto-shrink_800_800/B56ZSdCP4wGsAc-/0/1737801400572?e=1756339200&v=beta&t=HKM70ABdvRj_yMdHu5I_j0Q-AR8xPZcFVLx0C9Z-GOM"
                   alt="Aayush Grag"
-                  className="w-96 h-60 sm:w-60 sm:h-72 lg:w-80 lg:h-96 object-cover rounded-2xl mx-auto shadow-lg"
+                  className="w-60 h-72 lg:w-80 lg:h-96 object-cover rounded-2xl mx-auto shadow-lg"
                 />
                 <h3 className="text-xl mt-5 sm:text-2xl font-medium text-gray-900 mb-2">
                   Aayush Grag
@@ -466,7 +469,7 @@ const Company = () => {
                 </a>
               </div>
 
-              <div className="text-gray-700 w-[700px] mt-7 ml-44 text-sm  sm:text-base mb-6 sm:mb-8 ">
+              <div className="text-gray-700 text-sm sm:text-base leading-relaxed max-w-xl lg:max-w-2xl px-4 lg:px-0">
                 Aayush is a tech entrepreneur and AI architect with a mission to
                 transform how healthcare systems think, act, and respond. With a
                 deep background in building scalable SaaS and AI platforms, he
@@ -487,10 +490,10 @@ const Company = () => {
                 </span>
                 <br />
                 <br />
-                <p className="mr-12">
-                  <span className="font-bold ">Focus Areas</span>: Generative
-                  AI, agent architecture, secure infrastructure, and
-                  multilingual conversational systems.
+                <p>
+                  <span className="font-bold">Focus Areas</span>: Generative AI,
+                  agent architecture, secure infrastructure, and multilingual
+                  conversational systems.
                 </p>
               </div>
             </div>
