@@ -400,19 +400,19 @@ const Company = () => {
                   alt="Varun Grag"
                   className="w-60 h-72 lg:w-80 lg:h-96 object-cover rounded-2xl mx-auto shadow-lg"
                 />
-                <h3 className="text-xl mt-5 sm:text-2xl font-medium text-gray-900 mb-2">
-                  Varun Grag
+                <h3 className="text-xl mt-5 sm:text-2xl font-medium text-gray-900 mb-2 lg:ml-20">
+                  Varun Garg
                 </h3>
-                <p className="text-gray-600 mb-3 sm:mb-4 text-sm sm:text-base">
+                <p className="text-gray-600 mb-3 sm:mb-4 text-sm sm:text-base lg:ml-16">
                   CEO, Olli AI, DocPlix
                 </p>
                 <a
-                  href="https://www.linkedin.com/in/aayush-garg-3123a5b9/"
+                  href="https://www.linkedin.com/in/dr-varun-garg-903110a4/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-600 hover:text-gray-500 transition-colors inline-block"
+                  className="text-gray-600 hover:text-gray-500 transition-colors inline-block lg:ml-28"
                 >
-                  <Linkedin className="w-5 h-5 sm:w-6 sm:h-6 bg-gray-200 p-1 border rounded-sm" />
+                  <Linkedin className="w-5 h-5 sm:w-6 sm:h-6 bg-gray-200 p-1 border rounded-sm mx-auto lg:mx-0" />
                 </a>
               </div>
 
@@ -453,19 +453,19 @@ const Company = () => {
                   alt="Aayush Grag"
                   className="w-60 h-72 lg:w-80 lg:h-96 object-cover rounded-2xl mx-auto shadow-lg"
                 />
-                <h3 className="text-xl mt-5 sm:text-2xl font-medium text-gray-900 mb-2">
-                  Aayush Grag
+                <h3 className="text-xl mt-5 sm:text-2xl font-medium text-gray-900 mb-2 lg:ml-20">
+                  Aayush Garg
                 </h3>
-                <p className="text-gray-600 mb-3 sm:mb-4 text-sm sm:text-base">
+                <p className="text-gray-600 mb-3 sm:mb-4 text-sm sm:text-base lg:ml-16">
                   Founder & CTO, Olli AI, DocPlix
                 </p>
                 <a
                   href="https://www.linkedin.com/in/aayush-garg-3123a5b9/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-600 hover:text-gray-500 transition-colors inline-block"
+                  className="text-gray-600 hover:text-gray-500 transition-colors inline-block lg:ml-28"
                 >
-                  <Linkedin className="w-5 h-5 sm:w-6 sm:h-6 bg-gray-200 p-1 border rounded-sm" />
+                  <Linkedin className="w-5 h-5 sm:w-6 sm:h-6 bg-gray-200 p-1 border rounded-sm mx-auto lg:mx-0" />
                 </a>
               </div>
 

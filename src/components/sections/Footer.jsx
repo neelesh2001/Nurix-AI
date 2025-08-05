@@ -316,17 +316,17 @@ const Footer = () => {
       </div>
 
       {/* Large NURIX Background Text */}
-      <div className="relative overflow-hidden mr-80">
-        <div className="absolute inset-0 flex items-center justify-end pr-8">
-          <div className="text-brand-surface font-black text-[8rem] md:text-[12rem] lg:text-[16rem] leading-none opacity-15 select-none">
+      <div className="relative overflow-hidden mr-0 md:mr-80">
+        <div className="absolute inset-0 flex items-end justify-center md:items-center md:justify-end pr-0 md:pr-8">
+          <div className="text-brand-surface font-black text-[6rem] md:text-[12rem] lg:text-[16rem] leading-none opacity-15 select-none">
             Olli.A
           </div>
           {/* Blue Arrow */}
-          <div className="text-blue-600 font-black text-[8rem] md:text-[12rem] lg:text-[16rem] leading-none opacity-20 ml-4">
+          <div className="text-blue-600 font-black text-[6rem] md:text-[12rem] lg:text-[16rem] leading-none opacity-20 ml-2 md:ml-4">
             I
           </div>
         </div>
-        <div className="h-32 md:h-40 lg:h-48"></div>
+        <div className="h-24 md:h-40 lg:h-48"></div>
       </div>
     </footer>
   );

@@ -164,6 +164,10 @@ const Navbar = () => {
 
             <Link
               to="/"
+              onClick={() => {
+                handleScrollToTop();
+                handleMobileLinkClick("/"); // ✅ closes mobile menu after click
+              }}
               className="flex justify-between items-center w-full text-gray-700 hover:text-blue-600 transition-colors duration-200"
             >
               <span className="font-normal text-sm">HOME</span>
@@ -177,7 +181,10 @@ const Navbar = () => {
 
             <Link
               to="/contact-us"
-              onClick={handleScrollToTop}
+              onClick={() => {
+                handleScrollToTop();
+                handleMobileLinkClick("/contact-us"); // ✅ closes mobile menu after click
+              }}
               className="block text-center btn-primary font-light text-sm border rounded-full px-4 py-2"
             >
               LET'S TALK
