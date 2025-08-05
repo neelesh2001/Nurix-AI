@@ -3,6 +3,11 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Linkedin, Youtube, Instagram } from "lucide-react";
 import icon from "../../assets/logo_light.svg";
+import AES from "../../assets/AES.png";
+import ABDM from "../../assets/ABDM.png";
+import AWS from "../../assets/AWS.png";
+import DPIIT from "../../assets/DPIIT.png";
+import META from "../../assets/META.png";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
@@ -23,7 +28,7 @@ const Footer = () => {
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
           {/* Left Section - Newsletter */}
-          <div className="lg:col-span-2 space-y-8">
+          <div className="lg:col-span-2 space-y-8 w-[450px]">
             {/* Logo and Tagline */}
             <div className="space-y-4">
               <Link to="/" className="inline-block">
@@ -37,28 +42,27 @@ const Footer = () => {
             </div>
 
             {/* Certification Badges */}
-            <div className="flex space-x-4">
-              <div className="w-16 h-16 bg-gray-800 rounded-full flex items-center justify-center border border-gray-700">
-                <div className="text-center">
-                  <div className="text-xs font-bold">ISO</div>
-                  <div className="text-xs">27001</div>
-                </div>
-              </div>
-              <div className="w-16 h-16 bg-gray-800 rounded-full flex items-center justify-center border border-gray-700">
-                <div className="text-2xl">⚕</div>
-              </div>
-              <div className="w-16 h-16 bg-gray-800 rounded-full flex items-center justify-center border border-gray-700">
-                <div className="text-center">
-                  <div className="text-xs">★★★</div>
-                  <div className="text-xs">GDPR</div>
-                </div>
-              </div>
-              <div className="w-16 h-16 bg-gray-800 rounded-full flex items-center justify-center border border-gray-700">
-                <div className="text-center">
-                  <div className="text-xs font-bold">SOC2</div>
-                  <div className="text-xs">TYPE 2</div>
-                </div>
-              </div>
+            <div className="flex flex-wrap justify-start gap-5 mt-6  ">
+              <img src={AES} alt="AES" className="w-12 h-12 sm:w-14 sm:h-14 " />
+
+              <img
+                src={ABDM}
+                alt="ABDM"
+                className="w-12 h-12 sm:w-14 sm:h-14  "
+              />
+
+              <img src={AWS} alt="AWS" className="w-12 h-12 sm:w-14 sm:h-14 " />
+
+              <img
+                src={DPIIT}
+                alt="DPIIT"
+                className="w-12 h-12 sm:w-14 sm:h-14 "
+              />
+              <img
+                src={META}
+                alt="META"
+                className="w-12 h-12 sm:w-14 sm:h-14 "
+              />
             </div>
 
             {/* Newsletter Subscription */}

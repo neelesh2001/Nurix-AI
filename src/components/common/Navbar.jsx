@@ -90,12 +90,14 @@ const Navbar = () => {
             </div> */}
             <Link
               to="/"
+              onClick={handleScrollToTop}
               className="flex items-center space-x-1 text-gray-700 hover:text-blue-600 transition-colors duration-200"
             >
               <span className="font-normal text-xs">HOME</span>
             </Link>
             <Link
               to="/company"
+              onClick={handleScrollToTop}
               className="text-gray-700 hover:text-blue-600 font-normal transition-colors duration-200 text-xs"
             >
               COMPANY
