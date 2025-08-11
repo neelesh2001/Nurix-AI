@@ -117,10 +117,10 @@ const Company = () => {
         {/* Gradient Background Section */}
         {/* <div className="w-full h-32 sm:h-48 md:h-80 lg:h-[350px] rounded-2xl bg-gradient-to-br from-teal-800 via-amber-600 to-teal-900 shadow-2xl mb-12 sm:mb-16 lg:mb-20 animate-on-scroll">
         </div> */}
-        <div className="w-full h-44 sm:h-60 md:h-96 lg:h-[500px] rounded-2xl bg-gradient-to-br from-teal-800 via-amber-600 to-teal-900 shadow-2xl mb-12 sm:mb-16 lg:mb-20 animate-on-scroll overflow-hidden">
+        <div className="w-full h-44 sm:h-60 md:h-96 lg:h-[500px] rounded-2xl  shadow-2xl mb-12 sm:mb-16 lg:mb-20 animate-on-scroll overflow-hidden">
           <img
             src="https://docplix.com/_next/static/media/about_us_img.94c597c5.svg"
-            alt="About Us"
+            alt="Team photo"
             className="w-full h-full object-cover object-bottom"
           />
         </div>
@@ -418,7 +418,7 @@ const Company = () => {
                   rel="noopener noreferrer"
                   className="text-gray-600 hover:text-gray-500 transition-colors inline-block lg:ml-28"
                 >
-                  <Linkedin className="w-5 h-5 sm:w-6 sm:h-6 bg-gray-200 p-1 border rounded-sm mx-auto lg:mx-0" />
+                  <Linkedin className="w-5 h-5 sm:w-6 sm:h-6 bg-gray-200 p-1 border rounded-sm mx-auto lg:mx-0 lg:ml-3" />
                 </a>
               </div>
 
@@ -462,7 +462,7 @@ const Company = () => {
                 <h3 className="text-xl mt-5 sm:text-2xl font-medium text-gray-900 mb-2 lg:ml-20">
                   Aayush Garg
                 </h3>
-                <p className="text-gray-600 mr-5 mb-3 sm:mb-4 text-sm sm:text-base lg:ml-16">
+                <p className="text-gray-600  mb-3 sm:mb-4 text-sm sm:text-base lg:ml-10 ">
                   Founder & CTO, Olli AI, DocPlix
                 </p>
                 <a
@@ -471,7 +471,7 @@ const Company = () => {
                   rel="noopener noreferrer"
                   className="text-gray-600 hover:text-gray-500 transition-colors inline-block lg:ml-28"
                 >
-                  <Linkedin className="w-5 h-5 sm:w-6 sm:h-6 bg-gray-200 p-1 border rounded-sm mx-auto lg:mx-0" />
+                  <Linkedin className="w-5 h-5 sm:w-6 sm:h-6 bg-gray-200 p-1 border rounded-sm mx-auto lg:mx-0 lg:ml-5 " />
                 </a>
               </div>
 

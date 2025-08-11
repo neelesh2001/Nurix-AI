@@ -518,7 +518,7 @@ export default function FeatureTabs() {
               Built to Scale and Perform with Enterprise-grade Excellence
             </h2>
             <p className="text-gray-700 text-sm flex-1">
-              From secure deployment to continuous optimization, Nurix ensures
+              From secure deployment to continuous optimization, Olli ensures
               your AI journey is guided, reliable, and delivers lasting impact.
             </p>
           </div>

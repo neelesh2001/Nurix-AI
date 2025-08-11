@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import SimpleFooter from "../components/sections/SimpleFooter";
+import { Link } from "react-router-dom";
 
 const ContactUs = () => {
   const [privacyAccepted, setPrivacyAccepted] = useState(false);
@@ -194,14 +195,11 @@ const ContactUs = () => {
                     className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded mt-1"
                   />
                   <label htmlFor="privacy" className="text-sm text-gray-900">
-                    I allow Nurix to contact me for scheduling and marketing, as
+                    I allow Olli to contact me for scheduling and marketing, as
                     per its{" "}
-                    <a
-                      href="/privacy-policy"
-                      className="text-blue-600 underline"
-                    >
+                    <Link to="/privacy" className="text-blue-600 underline">
                       Privacy Policy
-                    </a>
+                    </Link>
                     .
                   </label>
                 </div>

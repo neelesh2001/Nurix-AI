@@ -30,7 +30,7 @@ const SimpleFooter = () => {
               />
             </Link>
 
-            <div>
+            {/* <div>
               <h3 className="text-lg font-normal text-gray-900 mb-4">
                 Subscribe to Newsletter
               </h3>
@@ -51,7 +51,7 @@ const SimpleFooter = () => {
                   <ArrowRight className="w-5 h-5" />
                 </button>
               </form>
-            </div>
+            </div> */}
           </div>
 
           {/* Company Links */}
@@ -105,7 +105,7 @@ const SimpleFooter = () => {
                   Privacy Policy
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   to="/refund"
                   onClick={handleScrollToTop}
@@ -113,7 +113,7 @@ const SimpleFooter = () => {
                 >
                   Refund Policy
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
 
@@ -232,7 +232,7 @@ const SimpleFooter = () => {
 
         {/* Bottom Section */}
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-gray-100">
-          <div className="text-sm text-gray-600 mb-4 md:mb-0">© 2024 Nurix</div>
+          <div className="text-sm text-gray-600 mb-4 md:mb-0">© 2024 Olli</div>
         </div>
       </div>
     </footer>

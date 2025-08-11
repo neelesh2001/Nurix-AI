@@ -71,7 +71,7 @@ const UseCases = () => {
         Voice Agents for each stage of your Sales Funnel
       </h2>
       <p className="mb-10 text-lg max-w-2xl mx-auto">
-        From first contact to qualified leads, see how Nurix AI Voice Agents
+        From first contact to qualified leads, see how Olli AI Voice Agents
         streamline critical sales tasks.
       </p>
 

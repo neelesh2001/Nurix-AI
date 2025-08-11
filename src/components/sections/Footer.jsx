@@ -66,7 +66,7 @@ const Footer = () => {
             </div>
 
             {/* Newsletter Subscription */}
-            <div className="space-y-6">
+            {/* <div className="space-y-6">
               <div className="space-y-2">
                 <h3 className="text-sm font-semibold">Subscribe to our</h3>
                 <h3 className="text-sm font-semibold">Newsletter</h3>
@@ -90,7 +90,7 @@ const Footer = () => {
                   SUBMIT
                 </button>
               </form>
-            </div>
+            </div> */}
           </div>
 
           {/* Company Links */}
@@ -144,7 +144,7 @@ const Footer = () => {
                   Privacy Policy
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   to="/refund"
                   onClick={handleScrollToTop}
@@ -152,7 +152,7 @@ const Footer = () => {
                 >
                   Refund Policy
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
 

@@ -1,6 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import img1 from "../../assets/img 01.png";
+import img2 from "../../assets/img 02.png";
+import img3 from "../../assets/img 03.png";
+import img4 from "../../assets/img 04.png";
+import img5 from "../../assets/img 05.png";
 
 const capabilities = [
   {
@@ -14,8 +19,7 @@ const capabilities = [
         ],
       },
     ],
-    image:
-      "https://cdn.prod.website-files.com/66796a37e9aadbf3722c4340/6864df81ca447d13a748aca5_Cult.fit%20-%20new.avif",
+    image: img1,
   },
   {
     title: "Scalable, intelligent support infrastructure",
@@ -28,8 +32,7 @@ const capabilities = [
         ],
       },
     ],
-    image:
-      "https://cdn.prod.website-files.com/66796a37e9aadbf3722c4340/6864df81673f1b1f3544c75a_super.money%20-%20new.avif",
+    image: img2,
   },
   {
     title: "Seamless integration with your tools",
@@ -42,8 +45,7 @@ const capabilities = [
         ],
       },
     ],
-    image:
-      "https://cdn.prod.website-files.com/66796a37e9aadbf3722c4340/6864df81bb07e2af7289629b_First%20Mid%20-%20new.avif",
+    image: img3,
   },
   {
     title: "Cut No-Shows and Missed Instructions",
@@ -56,8 +58,7 @@ const capabilities = [
         ],
       },
     ],
-    image:
-      "https://cdn.prod.website-files.com/66796a37e9aadbf3722c4340/6864df81ca447d13a748aca5_Cult.fit%20-%20new.avif",
+    image: img4,
   },
   {
     title: "Proven Growth & Satisfaction Impact",
@@ -70,8 +71,7 @@ const capabilities = [
         ],
       },
     ],
-    image:
-      "https://cdn.prod.website-files.com/66796a37e9aadbf3722c4340/6864df81ca447d13a748aca5_Cult.fit%20-%20new.avif",
+    image: img5,
   },
 ];
 
