@@ -1,11 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import img1 from "../../assets/img 01.png";
-import img2 from "../../assets/img 02.png";
-import img3 from "../../assets/img 03.png";
-import img4 from "../../assets/img 04.png";
-import img5 from "../../assets/img 05.png";
+import img1 from "../../assets/img01.png";
+import img2 from "../../assets/img02.png";
+import img3 from "../../assets/img03.png";
+import img4 from "../../assets/img04.png";
+import img5 from "../../assets/img05.png";
 
 const capabilities = [
   {
