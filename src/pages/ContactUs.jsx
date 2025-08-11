@@ -231,7 +231,10 @@ const ContactUs = () => {
                   <div className="inline-block bg-yellow-400 text-black px-3 py-1 rounded-full text-xs font-medium mb-4">
                     Location
                   </div>
-                  <p className="text-sm">34 Tidal Way, San Mateo, CA 94401</p>
+                  <p className="text-sm ml-1">
+                    RKN Heights C-2/143 Vibhuti Khand, Gomti Nagar , Lucknow
+                    Uttar Pradesh-226010
+                  </p>
                 </div>
 
                 {/* Sales Inquiries */}
@@ -239,7 +242,7 @@ const ContactUs = () => {
                   <div className="inline-block bg-yellow-400 text-black px-3 py-1 rounded-full text-xs font-medium mb-4">
                     Sales Inquiries
                   </div>
-                  <p className="text-sm">hello@olli.ai</p>
+                  <p className="text-sm ml-1">hello@olli.ai</p>
                 </div>
 
                 {/* Partners */}
@@ -247,7 +250,7 @@ const ContactUs = () => {
                   <div className="inline-block bg-yellow-400 text-black px-3 py-1 rounded-full text-xs font-medium mb-4">
                     Partners
                   </div>
-                  <p className="text-sm">partners@olli.ai</p>
+                  <p className="text-sm ml-1">partners@olli.ai</p>
                 </div>
               </div>
             </div>

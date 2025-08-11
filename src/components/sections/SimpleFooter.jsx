@@ -98,7 +98,7 @@ const SimpleFooter = () => {
               </li>
               <li>
                 <Link
-                  to="/priacy"
+                  to="/privacy"
                   onClick={handleScrollToTop}
                   className="text-gray-700 hover:text-gray-900 transition-colors duration-200"
                 >

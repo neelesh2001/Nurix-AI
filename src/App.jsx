@@ -17,7 +17,7 @@ function App() {
         <Route path="/sales" element={<Sales />} />
         <Route path="/support" element={<Support />} />
         <Route path="/company" element={<Company />} />
-        <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/contact" element={<ContactUs />} />
         <Route path="/terms" element={<TermsandCondition />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/refund" element={<RefundPolicy />} />

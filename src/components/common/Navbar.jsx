@@ -91,20 +91,20 @@ const Navbar = () => {
             <Link
               to="/"
               onClick={handleScrollToTop}
-              className="flex items-center space-x-1 text-gray-700 hover:text-blue-600 transition-colors duration-200"
+              className="flex items-center space-x-1 text-gray-700 "
             >
               <span className="font-normal text-xs">HOME</span>
             </Link>
             <Link
               to="/company"
               onClick={handleScrollToTop}
-              className="text-gray-700 hover:text-blue-600 font-normal transition-colors duration-200 text-xs"
+              className="text-gray-700  transition-colors duration-200 text-xs"
             >
               COMPANY
             </Link>
 
             <Link
-              to="/contact-us"
+              to="/contact"
               onClick={handleScrollToTop}
               className="btn-primary font-light text-xs border rounded-full px-4 py-2"
             >
@@ -170,22 +170,22 @@ const Navbar = () => {
                 handleScrollToTop();
                 handleMobileLinkClick("/"); // ✅ closes mobile menu after click
               }}
-              className="flex justify-between items-center w-full text-gray-700 hover:text-blue-600 transition-colors duration-200"
+              className="flex justify-between items-center w-full text-gray-700 "
             >
               <span className="font-normal text-sm">HOME</span>
             </Link>
             <button
               onClick={() => handleMobileLinkClick("/company")}
-              className="block text-left text-gray-700 hover:text-blue-600 font-normal transition-colors duration-200 text-sm"
+              className="block text-left text-gray-700  duration-200 text-sm"
             >
               COMPANY
             </button>
 
             <Link
-              to="/contact-us"
+              to="/contact"
               onClick={() => {
                 handleScrollToTop();
-                handleMobileLinkClick("/contact-us"); // ✅ closes mobile menu after click
+                handleMobileLinkClick("/contact-"); // ✅ closes mobile menu after click
               }}
               className="block text-center btn-primary font-light text-sm border rounded-full px-4 py-2"
             >

@@ -160,7 +160,7 @@ export default function CapabilitiesSection() {
 
               <div className="pt-5">
                 <Link
-                  to="/contact-us"
+                  to="/contact"
                   className="mt-6 px-6 py-3 bg-blue-600 text-white text-sm rounded-full font-medium hover:bg-blue-700 transition-colors duration-200 inline-block"
                 >
                   LEARN MORE

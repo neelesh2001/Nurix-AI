@@ -29,7 +29,7 @@ const HeroSection = () => {
         {/* Buttons */}
         <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
           <Link
-            to="/contact-us"
+            to="/contact"
             className="px-6 py-3 border border-gray-400 text-gray-900 rounded-md hover:bg-gray-100 transition"
           >
             Get Started for Free

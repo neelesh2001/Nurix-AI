@@ -115,8 +115,14 @@ const Company = () => {
         </div>
 
         {/* Gradient Background Section */}
-        <div className="w-full h-32 sm:h-48 md:h-80 lg:h-[350px] rounded-2xl bg-gradient-to-br from-teal-800 via-amber-600 to-teal-900 shadow-2xl mb-12 sm:mb-16 lg:mb-20 animate-on-scroll">
-          {/* You can add content here if needed */}
+        {/* <div className="w-full h-32 sm:h-48 md:h-80 lg:h-[350px] rounded-2xl bg-gradient-to-br from-teal-800 via-amber-600 to-teal-900 shadow-2xl mb-12 sm:mb-16 lg:mb-20 animate-on-scroll">
+        </div> */}
+        <div className="w-full h-44 sm:h-60 md:h-96 lg:h-[500px] rounded-2xl bg-gradient-to-br from-teal-800 via-amber-600 to-teal-900 shadow-2xl mb-12 sm:mb-16 lg:mb-20 animate-on-scroll overflow-hidden">
+          <img
+            src="https://docplix.com/_next/static/media/about_us_img.94c597c5.svg"
+            alt="About Us"
+            className="w-full h-full object-cover object-bottom"
+          />
         </div>
 
         {/* Story Content Section */}
@@ -450,13 +456,13 @@ const Company = () => {
               <div className="mb-4 sm:mb-6 flex-shrink-0">
                 <img
                   src="https://media.licdn.com/dms/image/v2/D5603AQEi6cXTARR9uw/profile-displayphoto-shrink_800_800/B56ZSdCP4wGsAc-/0/1737801400572?e=1756339200&v=beta&t=HKM70ABdvRj_yMdHu5I_j0Q-AR8xPZcFVLx0C9Z-GOM"
-                  alt="Aayush Grag"
+                  alt="Aayush Garg"
                   className="w-60 h-72 lg:w-80 lg:h-96 object-cover rounded-2xl mx-auto shadow-lg"
                 />
                 <h3 className="text-xl mt-5 sm:text-2xl font-medium text-gray-900 mb-2 lg:ml-20">
                   Aayush Garg
                 </h3>
-                <p className="text-gray-600 mb-3 sm:mb-4 text-sm sm:text-base lg:ml-16">
+                <p className="text-gray-600 mr-5 mb-3 sm:mb-4 text-sm sm:text-base lg:ml-16">
                   Founder & CTO, Olli AI, DocPlix
                 </p>
                 <a
