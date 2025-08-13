@@ -104,7 +104,7 @@ const Navbar = () => {
             </Link>
 
             <Link
-              to="/contact"
+              to="/contact-us"
               onClick={handleScrollToTop}
               className="btn-primary font-light text-xs border rounded-full px-4 py-2"
             >
@@ -182,10 +182,10 @@ const Navbar = () => {
             </button>
 
             <Link
-              to="/contact"
+              to="/contact-us"
               onClick={() => {
                 handleScrollToTop();
-                handleMobileLinkClick("/contact-"); // ✅ closes mobile menu after click
+                handleMobileLinkClick("/contact-us"); // ✅ closes mobile menu after click
               }}
               className="block text-center btn-primary font-light text-sm border rounded-full px-4 py-2"
             >

@@ -303,7 +303,7 @@ export default function CaseStudiesSection() {
         {/* Buttons */}
         <div className="mt-8 flex flex-col sm:flex-row gap-4">
           <Link
-            to="/contact"
+            to="/contact-us"
             className="px-4 py-3 bg-blue-600 text-white rounded-full font-medium text-xs hover:bg-blue-700 transition text-center"
           >
             LET'S TALK

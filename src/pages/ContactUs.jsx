@@ -1,10 +1,14 @@
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+import axios from "axios";
 import SimpleFooter from "../components/sections/SimpleFooter";
 import { Link } from "react-router-dom";
+import Toast from "../components/common/Toast";
 
 const ContactUs = () => {
   const [privacyAccepted, setPrivacyAccepted] = useState(false);
+  const [toast, setToast] = useState({ show: false, message: "", type: "" });
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -13,6 +17,12 @@ const ContactUs = () => {
     source: "",
     message: "",
   });
+  const showToast = (message, type) => {
+    setToast({ show: true, message, type });
+    setTimeout(() => {
+      setToast({ show: false, message: "", type: "" });
+    }, 3000); // hides after 3s
+  };
 
   const handleInputChange = (e) => {
     setFormData({
@@ -21,13 +31,41 @@ const ContactUs = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!privacyAccepted) {
-      alert("Please accept the privacy policy to continue.");
-      return;
+
+    try {
+      const payload = {
+        name: formData.name,
+        email: formData.email,
+        contact: formData.phone,
+        webpage: window.location.pathname,
+        businessname: formData.company,
+        hearSource: formData.source,
+        message: formData.message,
+      };
+
+      const res = await axios.post(
+        "https://stag.docpli.online/api/docplix/health-locker-web-url/record-visitor-data",
+        payload
+      );
+
+      console.log("API Response:", res.data);
+      showToast("Your details have been submitted successfully!", "success");
+
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        company: "",
+        source: "",
+        message: "",
+      });
+      setPrivacyAccepted(false);
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      showToast("Something went wrong. Please try again later.", "error");
     }
-    console.log("Form submitted:", formData);
   };
 
   const sectionVariants = {
@@ -41,6 +79,15 @@ const ContactUs = () => {
 
   return (
     <>
+      <AnimatePresence>
+        {toast.show && (
+          <Toast
+            message={toast.message}
+            type={toast.type}
+            onClose={() => setToast({ show: false, message: "", type: "" })}
+          />
+        )}
+      </AnimatePresence>
       <motion.section
         className="min-h-screen bg-white py-16 px-4 sm:px-6 lg:px-8 w-full max-w-[1100px] mx-auto"
         variants={sectionVariants}
@@ -113,7 +160,6 @@ const ContactUs = () => {
                       onChange={handleInputChange}
                       placeholder="Enter your email"
                       className="w-full py-3 border-b border-gray-300 text-xs"
-                      required
                     />
                   </div>
                 </div>
@@ -131,6 +177,7 @@ const ContactUs = () => {
                       onChange={handleInputChange}
                       placeholder="Enter your phone number"
                       className="w-full py-3 border-b border-gray-300 text-xs"
+                      required
                     />
                   </div>
                   <div>

@@ -113,11 +113,11 @@ export default function CapabilitiesSection() {
         </h2>
       </motion.div>
 
-      <div className="space-y-8 w-full max-w-[1000px] mx-auto">
+      <div className="space-y-6 w-full max-w-[1000px] mx-auto">
         {capabilities.map((item, index) => (
           <motion.div
             key={index}
-            className="bg-white border p-6 md:p-8 flex flex-col md:flex-row gap-6 md:gap-8 items-start"
+            className="bg-white border p-3 md:p-5 flex flex-col md:flex-row gap-6 md:gap-8 items-start"
             variants={cardVariants}
             initial="hidden"
             whileInView="visible"
@@ -134,7 +134,7 @@ export default function CapabilitiesSection() {
 
             {/* Content Section */}
             <div className="flex-1 space-y-6">
-              <h3 className="text-xl md:text-4xl font-medium text-gray-900 leading-tight">
+              <h3 className="text-xl md:text-3xl font-medium text-gray-900 leading-tight">
                 {item.title}
               </h3>
 
@@ -145,7 +145,7 @@ export default function CapabilitiesSection() {
                     className="flex flex-col md:flex-row items-start md:space-x-4"
                   >
                     <div>
-                      <h3 className="text-gray-900 font-medium text-lg md:text-xl mb-2">
+                      <h3 className="text-gray-900 font-normal text-lg md:text-xl mb-2">
                         {feature.heading}
                       </h3>
                       <ul className="space-y-2 text-gray-600 text-sm md:text-base leading-relaxed">
@@ -160,7 +160,7 @@ export default function CapabilitiesSection() {
 
               <div className="pt-5">
                 <Link
-                  to="/contact"
+                  to="/contact-us"
                   className="mt-6 px-6 py-3 bg-blue-600 text-white text-sm rounded-full font-medium hover:bg-blue-700 transition-colors duration-200 inline-block"
                 >
                   LEARN MORE

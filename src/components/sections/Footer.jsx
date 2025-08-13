@@ -288,7 +288,7 @@ const Footer = () => {
                 </svg>
               </a>
               <a
-                href="https://linkedin.com/company/nurix"
+                href="https://www.linkedin.com/company/docplix/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700 transition-colors duration-200"
@@ -296,7 +296,7 @@ const Footer = () => {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="https://youtube.com/nurix"
+                href="https://www.youtube.com/@DocplixRx"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700 transition-colors duration-200"
