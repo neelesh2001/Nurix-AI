@@ -58,7 +58,7 @@ const TeamBacking = () => {
           MEET THE TEAM
         </Link>
       </div>
-      <div className="w-full -mt-12">
+      <div className="w-full ">
         <img src={bg} alt="Logo" className="w-full h-auto object-cover block" />
       </div>
     </motion.section>

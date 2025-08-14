@@ -269,116 +269,6 @@ const Company = () => {
         </div>
 
         {/* Benchmark Section */}
-        <div className="mt-20 sm:mt-24 lg:mt-32 animate-on-scroll">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
-            {/* Left side - Text content */}
-            <div>
-              <p className="text-gray-600 text-sm sm:text-base mb-6 sm:mb-8">
-                Benchmarking
-              </p>
-              <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium text-gray-900 leading-tight mb-6 sm:mb-8">
-                <span>Outperforming Global </span>
-                <br />
-                <span>Benchmarks</span>
-              </h2>
-              <p className="text-gray-700 text-sm sm:text-base mb-6 sm:mb-8 max-w-md">
-                Olli AI achieved 94.8% accuracy in the USMLE (Step 1),
-                outperforming OpenEvidence, Hippocratic AI, and GPT-4. This
-                makes Olli one of the most clinically accurate Health AIs ever
-                benchmarked.
-                {/* <br />
-                When your AI partner is smarter than most
-                physicians-in-training, you can trust it to support real
-                decisions. */}
-              </p>
-              {/* <button className="inline-flex text-gray-900 font-medium text-sm">
-                Learn More
-                <svg
-                  className="ml-2 w-4 h-4 sm:w-5 sm:h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
-              </button> */}
-            </div>
-
-            {/* Right side - Benchmark chart */}
-            <div className="bg-slate-800 rounded-2xl sm:rounded-3xl p-6 sm:p-8">
-              <div className="space-y-4 sm:space-y-6">
-                {/* Each benchmark item */}
-                {[
-                  {
-                    name: "Olli",
-                    score: "94.8",
-                    color: "bg-green-400",
-                    highlight: true,
-                  },
-                  {
-                    name: "Open Evidence",
-                    score: "90.7",
-                    color: "bg-gray-400",
-                  },
-                  {
-                    name: "Hippocratic AI",
-                    score: "89.9",
-                    color: "bg-pink-400",
-                  },
-                  { name: "GPT-4", score: "87.8", color: "bg-teal-400" },
-                  {
-                    name: "Anthropic Claude 2",
-                    score: "66.5",
-                    color: "bg-purple-400",
-                  },
-                  { name: "ChatGPT", score: "58.7", color: "bg-green-400" },
-                ].map((item, index) => (
-                  <div
-                    key={item.name}
-                    className={`animate-on-scroll stagger-delay-${index + 1}`}
-                  >
-                    <div className="flex items-center justify-between mb-2">
-                      <div className="flex items-center">
-                        {item.highlight && (
-                          <div className="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-purple-400 mr-2 sm:mr-3"></div>
-                        )}
-                        <span
-                          className={`text-xs sm:text-sm ${
-                            item.highlight
-                              ? "text-white font-medium"
-                              : "text-gray-300"
-                          }`}
-                        >
-                          {item.name}
-                        </span>
-                      </div>
-                      <span
-                        className={`text-xs sm:text-sm ${
-                          item.highlight
-                            ? "text-white font-semibold"
-                            : "text-gray-300"
-                        }`}
-                      >
-                        {item.score} %
-                      </span>
-                    </div>
-                    <div className="w-full bg-gray-700 rounded-full h-1.5 sm:h-2">
-                      <div
-                        className={`${item.color} h-1.5 sm:h-2 rounded-full transition-all duration-1000 ease-out`}
-                        style={{ width: `${item.score}%` }}
-                      ></div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
 
         {/* Team Section */}
         <div className="mt-20 sm:mt-24 lg:mt-32 text-center animate-on-scroll">
@@ -386,11 +276,9 @@ const Company = () => {
             Our Team
           </p>
           <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium text-gray-900 leading-tight mb-12 sm:mb-16">
-            Meet the Minds Behind
-            <br />
-            <span className=""></span> Olli
+            Meet the Minds Behind Olli
           </h2>
-          <p className="text-gray-700 text-sm sm:text-base mb-6 sm:mb-8 max-w-[650px] mx-auto px-4">
+          <p className="text-gray-700 text-sm sm:text-base mb-6 sm:mb-8 max-w-[750px] mx-auto px-4">
             Founded by a doctor-engineer duo, Olli AI blends healthcare depth
             with technical brilliance — ensuring your care is powered by
             compassion, logic, and relentless innovation.

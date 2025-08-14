@@ -113,7 +113,7 @@ export default function CapabilitiesSection() {
         </h2>
       </motion.div>
 
-      <div className="space-y-6 w-full max-w-[1000px] mx-auto">
+      <div className="space-y-6 w-full max-w-[1000px] mx-auto ">
         {capabilities.map((item, index) => (
           <motion.div
             key={index}
