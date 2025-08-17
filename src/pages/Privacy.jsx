@@ -6,9 +6,11 @@ export default function Privacy() {
       <section className="bg-white min-h-screen flex flex-col items-center py-10 px-4 sm:px-6 lg:px-12">
         <div className="max-w-4xl w-full">
           {/* Title */}
-          <span className="inline-block ml-[408px] text-xs font-normal text-brand-text bg-gray-100 px-3 py-1 rounded-full mb-4">
-            Privacy
-          </span>
+          <div className="flex justify-center mb-4">
+            <span className="inline-block text-xs font-normal text-brand-text bg-gray-100 px-3 py-1 rounded-full">
+              Privacy
+            </span>
+          </div>
           <h1 className="text-4xl sm:text-5xl  md:text-6xl font-medium text-center mb-2">
             Privacy Policy
           </h1>

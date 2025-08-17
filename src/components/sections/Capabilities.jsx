@@ -82,7 +82,7 @@ export default function CapabilitiesSection() {
 
   return (
     <section className="px-4 py-16 md:px-12 lg:px-32 bg-white">
-      <motion.div
+      {/* <motion.div
         className="mb-12 md:ml-28 ml-4"
         variants={headerVariants}
         initial="hidden"
@@ -97,62 +97,6 @@ export default function CapabilitiesSection() {
         </h2>
       </motion.div>
 
-      {/* <div className="space-y-6 w-full max-w-[1000px] mx-auto ">
-        {capabilities.map((item, index) => (
-          <motion.div
-            key={index}
-            className="bg-white border p-3 md:p-5 flex flex-col md:flex-row gap-6 md:gap-8 items-start"
-            variants={cardVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
-          >
-            <div className="w-full md:w-[50%] h-[200px] md:h-[350px] overflow-hidden custom-cut-corner bg-gray-100 rounded-sm">
-              <img
-                src={item.image}
-                alt={item.title}
-                className="w-full h-full object-cover"
-              />
-            </div>
-
-            <div className="flex-1 space-y-6">
-              <h3 className="text-xl md:text-3xl font-medium text-brand-textleading-tight">
-                {item.title}
-              </h3>
-
-              <div className="space-y-5">
-                {item.features.map((feature, featureIndex) => (
-                  <div
-                    key={featureIndex}
-                    className="flex flex-col md:flex-row items-start md:space-x-4"
-                  >
-                    <div>
-                      <h3 className="text-brand-text font-normal text-lg md:text-xl mb-2">
-                        {feature.heading}
-                      </h3>
-                      <ul className="space-y-2 text-gray-600 text-sm md:text-base leading-relaxed">
-                        {feature.points.map((point, idx) => (
-                          <li key={idx}>{point}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              <div className="pt-5">
-                <Link
-                  to="/contact-us"
-                  className="mt-6 px-6 py-3 bg-brand-primary text-white text-sm rounded-full font-medium  transition-colors duration-200 inline-block"
-                >
-                  LEARN MORE
-                </Link>
-              </div>
-            </div>
-          </motion.div>
-        ))}
-      </div> */}
-      {/* Cards Container */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-[1100px] mx-auto">
         {capabilities.map((item, index) => (
           <motion.div
@@ -163,7 +107,6 @@ export default function CapabilitiesSection() {
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
           >
-            {/* Image Section */}
             <div className="w-full h-[220px] md:h-[280px] overflow-hidden  bg-gray-100 rounded-md">
               <img
                 src={item.image}
@@ -172,7 +115,6 @@ export default function CapabilitiesSection() {
               />
             </div>
 
-            {/* Content Section */}
             <div className="flex-1 space-y-6 w-[1000px]">
               <h3 className="text-xl md:text-2xl font-medium text-brand-text leading-tight ">
                 {item.title}
@@ -199,6 +141,76 @@ export default function CapabilitiesSection() {
                 <Link
                   to="/contact-us"
                   className=" ml-[380px] px-4 py-2 bg-brand-primary text-white text-xs rounded-full font-normal  transition-colors duration-200 inline-block"
+                >
+                  LEARN MORE
+                </Link>
+              </div>
+            </div>
+          </motion.div>
+        ))}
+      </div> */}
+      <motion.div
+        className="mb-12 text-center md:text-left"
+        variants={headerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        <span className="inline-block text-xs font-normal text-brand-text bg-gray-100 px-3 py-1 rounded-full mb-2 mx-auto md:ml-[550px]">
+          Capabilities
+        </span>
+        <h2 className="text-3xl md:text-5xl font-medium text-brand-text max-w-2xl mt-2 mx-auto md:ml-[300px]">
+          Discover the Olli Advantage
+        </h2>
+      </motion.div>
+
+      {/* Cards Container */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-[1100px] mx-auto">
+        {capabilities.map((item, index) => (
+          <motion.div
+            key={index}
+            className="bg-white border rounded-md p-3 md:p-5 flex flex-col gap-6 items-start"
+            variants={cardVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+          >
+            {/* Image Section */}
+            <div className="w-full h-[220px] md:h-[280px] overflow-hidden bg-gray-100 rounded-md">
+              <img
+                src={item.image}
+                alt={item.title}
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+            {/* Content Section */}
+            <div className="flex-1 space-y-6 w-full">
+              <h3 className="text-xl md:text-2xl font-medium text-brand-text leading-tight">
+                {item.title}
+              </h3>
+
+              <div className="space-y-5">
+                {item.features.map((feature, featureIndex) => (
+                  <div key={featureIndex} className="flex flex-col items-start">
+                    <div>
+                      <h3 className="text-brand-text font-normal text-lg md:text-xl mb-2">
+                        {feature.heading}
+                      </h3>
+                      <ul className="space-y-2 text-gray-600 text-sm md:text-base leading-relaxed">
+                        {feature.points.map((point, idx) => (
+                          <li key={idx}>{point}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <div className="pt-3 flex justify-center md:justify-end">
+                <Link
+                  to="/contact-us"
+                  className="px-4 py-2 bg-brand-primary text-white text-xs rounded-full font-normal transition-colors duration-200 inline-block"
                 >
                   LEARN MORE
                 </Link>
