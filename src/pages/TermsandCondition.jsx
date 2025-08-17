@@ -3,15 +3,18 @@ import SimpleFooter from "../components/sections/SimpleFooter";
 
 const TermsandCondition = () => {
   return (
-    <div className="bg-gradient-to-r from-white to-blue-50 min-h-screen flex flex-col">
+    <div className="bg-white min-h-screen flex flex-col">
       {/* Main Content */}
       <main className="flex justify-center px-4 sm:px-6 lg:px-8 py-12 flex-1">
         <div className="max-w-4xl w-full">
+          <span className="inline-block ml-[408px] text-xs font-normal text-brand-text bg-gray-100 px-3 py-1 rounded-full mb-4">
+            Terms
+          </span>
           {/* Title */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-medium text-center mb-2">
             Terms of Use
           </h1>
-          <p className="text-center text-gray-600 mb-8 text-sm sm:text-base">
+          <p className="text-center text-brand-text mb-8 text-sm sm:text-base">
             Last updated on 15 March 2025.
           </p>
 
@@ -75,7 +78,7 @@ const TermsandCondition = () => {
 const Section = ({ title, content }) => (
   <>
     <h2 className="text-base sm:text-lg font-semibold mb-2">{title}</h2>
-    <p className="text-brand-text mb-6 text-sm sm:text-base leading-relaxed whitespace-pre-line">
+    <p className="text-brand-text mb-6 text-xs sm:text-sm leading-relaxed whitespace-pre-line">
       {content}
     </p>
   </>

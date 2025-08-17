@@ -3,20 +3,23 @@ import SimpleFooter from "../components/sections/SimpleFooter";
 export default function Privacy() {
   return (
     <>
-      <section className="bg-gradient-to-r from-white to-blue-50 min-h-screen flex flex-col items-center py-10 px-4 sm:px-6 lg:px-12">
+      <section className="bg-white min-h-screen flex flex-col items-center py-10 px-4 sm:px-6 lg:px-12">
         <div className="max-w-4xl w-full">
           {/* Title */}
-          <h1 className="text-3xl sm:text-4xl font-semibold text-center mb-2">
+          <span className="inline-block ml-[408px] text-xs font-normal text-brand-text bg-gray-100 px-3 py-1 rounded-full mb-4">
+            Privacy
+          </span>
+          <h1 className="text-4xl sm:text-5xl  md:text-6xl font-medium text-center mb-2">
             Privacy Policy
           </h1>
 
           {/* Last updated */}
-          <p className="text-center text-sm text-gray-600 mb-8">
+          <p className="text-center text-sm text-brand-text mb-8">
             Last updated on 15 March 2025.
           </p>
 
           {/* Content */}
-          <div className="space-y-6 text-gray-800 text-justify">
+          <div className="space-y-6 text-xs sm:text-sm text-brand-text text-justify">
             <p>
               This privacy policy{" "}
               <span className="italic font-semibold">(Policy)</span> explains

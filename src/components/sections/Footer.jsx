@@ -95,7 +95,7 @@ const Footer = () => {
 
           {/* Company Links */}
           <div className="space-y-4 mt-6">
-            <h4 className="text-blue-400 font-semibold text-xs tracking-wide">
+            <h4 className="text-brand-secondary font-semibold text-xs tracking-wide">
               RESOURCES
             </h4>
             <ul className="space-y-2">
@@ -122,7 +122,7 @@ const Footer = () => {
 
           {/* Solutions Links */}
           <div className="space-y-4 mt-5">
-            <h4 className="text-blue-400 font-semibold text-xs tracking-wide">
+            <h4 className="text-brand-secondary font-semibold text-xs tracking-wide">
               LEGAL
             </h4>
             <ul className="space-y-2">
@@ -144,131 +144,15 @@ const Footer = () => {
                   Privacy Policy
                 </Link>
               </li>
-              {/* <li>
-                <Link
-                  to="/refund"
-                  onClick={handleScrollToTop}
-                  className="text-gray-300 hover:text-white transition-colors duration-200 text-sm"
-                >
-                  Refund Policy
-                </Link>
-              </li> */}
             </ul>
           </div>
 
           {/* Industry & Resources */}
-          <div className="space-y-6">
-            {/* Industry */}
-            {/* <div className="space-y-4">
-              <h4 className="text-blue-400 font-semibold text-xs tracking-wide">
-                INDUSTRY
-              </h4>
-              <ul className="space-y-2">
-                <li>
-                  <Link
-                    to="/industry/retail"
-                    className="text-gray-300 hover:text-white transition-colors duration-200 text-sm"
-                  >
-                    Retail
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/industry/insurance"
-                    className="text-gray-300 hover:text-white transition-colors duration-200 text-sm"
-                  >
-                    Insurance
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/industry/home-services"
-                    className="text-gray-300 hover:text-white transition-colors duration-200 text-sm"
-                  >
-                    Home Services
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/industry/health-fitness"
-                    className="text-gray-300 hover:text-white transition-colors duration-200 text-sm"
-                  >
-                    Health and Fitness
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/industry/education"
-                    className="text-gray-300 hover:text-white transition-colors duration-200 text-sm"
-                  >
-                    Education
-                  </Link>
-                </li>
-              </ul>
-            </div> */}
-          </div>
+          <div className="space-y-6"></div>
         </div>
 
         {/* Resources & Legal Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mt-8 pt-6 border-t border-gray-800">
-          {/* Resources */}
-          {/* <div className="space-y-4">
-            <h4 className="text-blue-400 font-semibold text-xs tracking-wide">
-              RESOURCES
-            </h4>
-            <ul className="space-y-2">
-              <li>
-                <Link
-                  to="/"
-                  className="text-gray-300 hover:text-white transition-colors duration-200 text-sm"
-                >
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/resources/ai-explained"
-                  className="text-gray-300 hover:text-white transition-colors duration-200 text-sm"
-                >
-                  Company
-                </Link>
-              </li>
-            </ul>
-          </div> */}
-
-          {/* Legal */}
-          {/* <div className="space-y-4">
-            <h4 className="text-blue-400 font-semibold text-xs tracking-wide">
-              LEGAL
-            </h4>
-            <ul className="space-y-2">
-              <li>
-                <Link
-                  to="/legal/terms"
-                  className="text-gray-300 hover:text-white transition-colors duration-200 text-sm"
-                >
-                  Terms
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/legal/privacy-policy"
-                  className="text-gray-300 hover:text-white transition-colors duration-200 text-sm"
-                >
-                  Privacy Policy
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to=""
-                  className="text-gray-300 hover:text-white transition-colors duration-200 text-sm"
-                >
-                  Refund Policy
-                </Link>
-              </li>
-            </ul>
-          </div> */}
-
           {/* Social & Copyright */}
           <div className="lg:col-span-2 space-y-6">
             {/* Social Icons */}
@@ -314,7 +198,10 @@ const Footer = () => {
             </div>
 
             {/* Copyright */}
-            <div className="text-gray-400 text-sm">Olli.AI © 2025</div>
+            <div className="text-gray-400 text-sm">
+              Olli.AI © 2025 <br /> Docplix Solutions Private Limited. All
+              rights reserved.
+            </div>
           </div>
         </div>
       </div>
@@ -326,7 +213,7 @@ const Footer = () => {
             Olli.A
           </div>
           {/* Blue Arrow */}
-          <div className="text-blue-600 font-black text-[6rem] md:text-[12rem] lg:text-[16rem] leading-none opacity-20 ml-2 md:ml-4">
+          <div className="text-brand-secondary font-black text-[6rem] md:text-[12rem] lg:text-[16rem] leading-none opacity-20 ml-2 md:ml-4">
             I
           </div>
         </div>

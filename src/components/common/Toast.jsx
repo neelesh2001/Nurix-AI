@@ -9,7 +9,7 @@ const Toast = ({ message, type, onClose }) => {
       exit={{ opacity: 0, x: 100 }}
       transition={{ duration: 0.3 }}
       className={`fixed top-5 right-5 px-4 py-3 rounded-lg shadow-lg text-white z-50
-        ${type === "success" ? "bg-green-500" : "bg-red-500"}`}
+        ${type === "success" ? "bg-brand-success" : "bg-brand-error"}`}
     >
       <div className="flex items-center space-x-2">
         <span>{message}</span>

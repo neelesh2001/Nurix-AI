@@ -33,18 +33,18 @@ const TeamBacking = () => {
     >
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-16 pb-12">
         {/* Header Badge */}
-        <div className="inline-block bg-gray-200 text-gray-600 px-3 py-1 rounded-full text-sm font-normal mb-8">
+        <div className="inline-block bg-gray-200 text-brand-text px-3 py-1 rounded-full text-sm font-normal mb-8">
           Team & Backing
         </div>
 
         {/* Main Heading */}
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-gray-900 leading-tight mb-6">
+        <h2 className="text-3xl md:text-5xl font-medium text-brand-text leading-tight mb-6">
           Built by Healthcare Engineers. <br />
           Backed by Visionary Investors
         </h2>
 
         {/* Description */}
-        <p className="text-lg text-gray-600 leading-relaxed mb-8 max-w-3xl mx-auto">
+        <p className="text-lg text-brand-text leading-relaxed mb-8 max-w-3xl mx-auto">
           Olli AI is developed by experts from top healthtech & AI companies —
           with backing from global leaders in innovation.
         </p>
@@ -53,7 +53,7 @@ const TeamBacking = () => {
         <Link
           to="/company"
           onClick={handleScrollToTop}
-          className="inline-flex items-center bg-brand-background text-black border rounded-full px-4 py-3 font-semibold transition-colors duration-200 text-xs"
+          className="inline-flex items-center bg-brand-primary text-white rounded-full px-4 py-3 font-medium transition-colors duration-200 text-xs"
         >
           MEET THE TEAM
         </Link>

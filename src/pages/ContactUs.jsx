@@ -101,7 +101,7 @@ const ContactUs = () => {
             <img
               src="https://cdn.prod.website-files.com/66796a37e9aadbf3722c4340/668f703d2aa0bf69a597c3d9_Label%20Arrow.svg"
               alt="Logo"
-              className="bg-yellow-300 p-1 rounded-3xl mr-1 w-4"
+              className="bg-white p-1 rounded-3xl mr-1 w-4"
             />
             Contact Us
           </span>
@@ -109,14 +109,14 @@ const ContactUs = () => {
           {/* Header */}
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 mb-16">
             <div>
-              <h1 className="text-3xl lg:text-4xl font-semibold text-gray-900 leading-tight mb-6">
+              <h1 className="text-3xl lg:text-4xl font-semibold text-brand-text leading-tight mb-6">
                 Start your AI
                 <br />
                 transformation today!
               </h1>
             </div>
             <div className="flex items-end">
-              <p className="text-sm text-gray-600 leading-relaxed">
+              <p className="text-sm text-brand-text leading-relaxed">
                 Build a reliable, scalable, and secure solution that transforms
                 interactions into opportunities for growth.
               </p>
@@ -128,7 +128,7 @@ const ContactUs = () => {
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 mt-10">
             {/* Contact Form */}
             <div>
-              <h2 className="text-2xl font-normal text-gray-900 mb-8 mt-3">
+              <h2 className="text-2xl font-normal text-brand-text mb-8 mt-3">
                 Let's Talk
               </h2>
 
@@ -136,7 +136,7 @@ const ContactUs = () => {
                 {/* Name and Email Row */}
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-xs font-medium text-gray-700 mb-2">
+                    <label className="block text-xs font-medium text-brand-text mb-2">
                       Name
                     </label>
                     <input
@@ -167,7 +167,7 @@ const ContactUs = () => {
                 {/* Phone and Company Row */}
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-xs font-medium text-gray-700 mb-2">
+                    <label className="block text-xs font-medium text-brand-text mb-2">
                       Phone
                     </label>
                     <input
@@ -181,7 +181,7 @@ const ContactUs = () => {
                     />
                   </div>
                   <div>
-                    <label className="block text-xs font-medium text-gray-700 mb-2">
+                    <label className="block text-xs font-medium text-brand-text mb-2">
                       Company
                     </label>
                     <input
@@ -197,7 +197,7 @@ const ContactUs = () => {
 
                 {/* Source Dropdown */}
                 <div>
-                  <label className="block text-xs font-medium text-gray-700 mb-2">
+                  <label className="block text-xs font-medium text-brand-text mb-2">
                     Where did you hear about us?
                   </label>
                   <select
@@ -219,7 +219,7 @@ const ContactUs = () => {
 
                 {/* Message */}
                 <div>
-                  <label className="block text-xs font-medium text-gray-700 mb-2">
+                  <label className="block text-xs font-medium text-brand-text mb-2">
                     Message
                   </label>
                   <textarea
@@ -239,12 +239,15 @@ const ContactUs = () => {
                     id="privacy"
                     checked={privacyAccepted}
                     onChange={(e) => setPrivacyAccepted(e.target.checked)}
-                    className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded mt-1"
+                    className="h-4 w-4 text-brand-primary focus:ring-brand-primary border-gray-300 rounded mt-1"
                   />
-                  <label htmlFor="privacy" className="text-sm text-gray-900">
+                  <label htmlFor="privacy" className="text-sm text-brand-text">
                     I allow Olli to contact me for scheduling and marketing, as
                     per its{" "}
-                    <Link to="/privacy" className="text-blue-600 underline">
+                    <Link
+                      to="/privacy"
+                      className="text-brand-primary underline"
+                    >
                       Privacy Policy
                     </Link>
                     .
@@ -257,7 +260,7 @@ const ContactUs = () => {
                   disabled={!privacyAccepted}
                   className={`px-8 py-3 rounded-full font-medium transition-colors duration-200 ${
                     privacyAccepted
-                      ? "bg-blue-600 hover:bg-blue-700 text-white"
+                      ? "bg-brand-primary text-white"
                       : "bg-gray-300 text-gray-500 cursor-not-allowed"
                   }`}
                 >
@@ -267,13 +270,13 @@ const ContactUs = () => {
             </div>
 
             {/* Contact Info */}
-            <div className="bg-gray-800 rounded-lg p-8 text-white h-fit w-full sm:w-[400px] mx-auto lg:mx-0 mt-10">
+            <div className="bg-brand-primary rounded-lg p-8 text-white h-fit w-full sm:w-[400px] mx-auto lg:mx-0 mt-10">
               <h3 className="text-2xl font-normal mb-8">Contact Info</h3>
 
               <div className="space-y-8">
                 {/* Location */}
                 <div>
-                  <div className="inline-block bg-yellow-400 text-black px-3 py-1 rounded-full text-xs font-medium mb-4">
+                  <div className="inline-block bg-gray-300 text-brand-text px-3 py-1 rounded-full text-xs font-medium mb-4">
                     Location
                   </div>
                   <p className="text-sm ml-1">
@@ -284,7 +287,7 @@ const ContactUs = () => {
 
                 {/* Sales Inquiries */}
                 <div>
-                  <div className="inline-block bg-yellow-400 text-black px-3 py-1 rounded-full text-xs font-medium mb-4">
+                  <div className="inline-block bg-gray-300 text-brand-text px-3 py-1 rounded-full text-xs font-medium mb-4">
                     Sales Inquiries
                   </div>
                   <p className="text-sm ml-1">hello@olli.ai</p>
@@ -292,7 +295,7 @@ const ContactUs = () => {
 
                 {/* Partners */}
                 <div>
-                  <div className="inline-block bg-yellow-400 text-black px-3 py-1 rounded-full text-xs font-medium mb-4">
+                  <div className="inline-block bg-gray-300 text-brand-text px-3 py-1 rounded-full text-xs font-medium mb-4">
                     Partners
                   </div>
                   <p className="text-sm ml-1">partners@olli.ai</p>

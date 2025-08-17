@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import img1 from "../../assets/Img01.png";
 import img2 from "../../assets/Img02.png";
-import img3 from "../../assets/Img03.png";
 import img4 from "../../assets/Img04.png";
 import img5 from "../../assets/Img05.png";
 
@@ -27,25 +26,12 @@ const capabilities = [
       {
         heading: "Scale Support Without Scaling Costs",
         points: [
-          "✅ Handles 10,000+ patient conversations/day across voice & WhatsApp",
+          "✅ Handles 10,000+ patients conversations across voice & WhatsApp",
           "✅ Reduces support staff time by 40%",
         ],
       },
     ],
     image: img2,
-  },
-  {
-    title: "Seamless integration with your tools",
-    features: [
-      {
-        heading: "Plug Into Your Workflow — Instantly",
-        points: [
-          "✅ Integrated with 400+ tools, including EHR, IVR, CRM",
-          "✅ Setup time: <2 hours, no developer needed.",
-        ],
-      },
-    ],
-    image: img3,
   },
   {
     title: "Cut No-Shows and Missed Instructions",
@@ -103,17 +89,15 @@ export default function CapabilitiesSection() {
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
       >
-        <span className="inline-block text-xs font-normal text-gray-600 bg-gray-100 px-3 py-1 rounded-full mb-2">
+        <span className="inline-block text-xs font-normal ml-[450px] text-brand-text bg-gray-100 px-3 py-1 rounded-full mb-2">
           Capabilities
         </span>
-        <h2 className="text-2xl md:text-3xl font-normal text-gray-900 max-w-xl mt-2">
-          Discover the
-          <br />
-          Olli Advantage
+        <h2 className="text-3xl md:text-5xl font-medium ml-[198px] text-brand-text max-w-2xl mt-2">
+          Discover the Olli Advantage
         </h2>
       </motion.div>
 
-      <div className="space-y-6 w-full max-w-[1000px] mx-auto ">
+      {/* <div className="space-y-6 w-full max-w-[1000px] mx-auto ">
         {capabilities.map((item, index) => (
           <motion.div
             key={index}
@@ -123,7 +107,6 @@ export default function CapabilitiesSection() {
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
           >
-            {/* Image Section */}
             <div className="w-full md:w-[50%] h-[200px] md:h-[350px] overflow-hidden custom-cut-corner bg-gray-100 rounded-sm">
               <img
                 src={item.image}
@@ -132,9 +115,8 @@ export default function CapabilitiesSection() {
               />
             </div>
 
-            {/* Content Section */}
             <div className="flex-1 space-y-6">
-              <h3 className="text-xl md:text-3xl font-medium text-gray-900 leading-tight">
+              <h3 className="text-xl md:text-3xl font-medium text-brand-textleading-tight">
                 {item.title}
               </h3>
 
@@ -145,7 +127,7 @@ export default function CapabilitiesSection() {
                     className="flex flex-col md:flex-row items-start md:space-x-4"
                   >
                     <div>
-                      <h3 className="text-gray-900 font-normal text-lg md:text-xl mb-2">
+                      <h3 className="text-brand-text font-normal text-lg md:text-xl mb-2">
                         {feature.heading}
                       </h3>
                       <ul className="space-y-2 text-gray-600 text-sm md:text-base leading-relaxed">
@@ -161,7 +143,62 @@ export default function CapabilitiesSection() {
               <div className="pt-5">
                 <Link
                   to="/contact-us"
-                  className="mt-6 px-6 py-3 bg-blue-600 text-white text-sm rounded-full font-medium hover:bg-blue-700 transition-colors duration-200 inline-block"
+                  className="mt-6 px-6 py-3 bg-brand-primary text-white text-sm rounded-full font-medium  transition-colors duration-200 inline-block"
+                >
+                  LEARN MORE
+                </Link>
+              </div>
+            </div>
+          </motion.div>
+        ))}
+      </div> */}
+      {/* Cards Container */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-[1100px] mx-auto">
+        {capabilities.map((item, index) => (
+          <motion.div
+            key={index}
+            className="bg-white border rounded-md p-3 md:p-5 flex flex-col gap-6 items-start"
+            variants={cardVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+          >
+            {/* Image Section */}
+            <div className="w-full h-[220px] md:h-[280px] overflow-hidden  bg-gray-100 rounded-md">
+              <img
+                src={item.image}
+                alt={item.title}
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+            {/* Content Section */}
+            <div className="flex-1 space-y-6 w-[1000px]">
+              <h3 className="text-xl md:text-2xl font-medium text-brand-text leading-tight ">
+                {item.title}
+              </h3>
+
+              <div className="space-y-5">
+                {item.features.map((feature, featureIndex) => (
+                  <div key={featureIndex} className="flex flex-col items-start">
+                    <div>
+                      <h3 className="text-brand-text font-normal text-lg md:text-xl mb-2">
+                        {feature.heading}
+                      </h3>
+                      <ul className="space-y-2 text-gray-600 text-sm md:text-base leading-relaxed">
+                        {feature.points.map((point, idx) => (
+                          <li key={idx}>{point}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <div className="pt-3">
+                <Link
+                  to="/contact-us"
+                  className=" ml-[380px] px-4 py-2 bg-brand-primary text-white text-xs rounded-full font-normal  transition-colors duration-200 inline-block"
                 >
                   LEARN MORE
                 </Link>

@@ -3,6 +3,7 @@ import { Linkedin } from "lucide-react";
 import SimpleFooter from "../components/sections/SimpleFooter";
 import Navbar from "../components/common/Navbar";
 import Footer from "../components/sections/Footer";
+import { Link } from "react-router-dom";
 
 const Company = () => {
   const observerRef = useRef(null);
@@ -87,37 +88,48 @@ const Company = () => {
         }
       `}</style>
 
-      <div className="max-w-7xl px-4 sm:px-6 lg:pl-36 lg:pr-6 mt-12 sm:mt-16 lg:mt-20">
+      <div className="max-w-7xl px-4 sm:px-6 lg:pl-36 lg:pr-6 mt-12 sm:mt-16 lg:mt-20 bg-white">
         {/* Header Section */}
-        <div className="mb-12 sm:mb-16 animate-on-scroll">
+        {/* <div className="mb-12 sm:mb-16 animate-on-scroll">
           <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start gap-6 lg:gap-8">
-            {/* Left side - Main heading */}
             <div className="lg:w-1/2">
-              <p className="text-gray-600 text-base sm:text-lg  sm:mb-8">
-                Our Story
-              </p>
-              <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium text-gray-900 leading-tight mt-10">
-                <br />
+              <span className="inline-block text-xs font-normal text-brand-text bg-gray-100 px-3 py-1 rounded-full mb-4">
+                All-in-One AI Front Desk
+              </span>
+              <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium text-brand-textleading-tight mt-10">
                 Built in India,Trusted Globally — AI-Powered Healthcare with You
                 at the Core
               </h1>
             </div>
 
-            {/* Right side - Tagline */}
             <div className="lg:w-[600px] lg:text-right lg:pt-20 mt-14 sm:mt-12 lg:mt-40 lg:mr-20 pl-40">
-              <p className="text-gray-600 text-base sm:text-lg font-normal">
+              <p className="text-brand-text text-base sm:text-lg font-normal">
                 We serve 5M+ patient interactions a year and counting — Olli AI
                 was designed from the ground up to empower real-world care, with
                 empathy, intelligence, and global scalability.
               </p>
             </div>
           </div>
+        </div> */}
+        <div className="text-center max-w-5xl mx-auto">
+          <span className="inline-block text-xs font-normal text-brand-text bg-gray-100 px-3 py-1  rounded-full mb-6">
+            Our Story
+          </span>
+          <h1 className="text-3xl md:text-5xl font-medium leading-snug text-brand-text">
+            Built in India,Trusted Globally — AI-Powered Healthcare with You at
+            the Core
+          </h1>
+          <p className="mt-6 text-brand-text text-sm md:text-base">
+            We serve 5M+ patient interactions a year and counting — Olli AI was
+            designed from the ground up to empower real-world care, with
+            empathy, intelligence, and global scalability.
+          </p>
         </div>
 
         {/* Gradient Background Section */}
         {/* <div className="w-full h-32 sm:h-48 md:h-80 lg:h-[350px] rounded-2xl bg-gradient-to-br from-teal-800 via-amber-600 to-teal-900 shadow-2xl mb-12 sm:mb-16 lg:mb-20 animate-on-scroll">
         </div> */}
-        <div className="w-full h-44 sm:h-60 md:h-96 lg:h-[500px] rounded-2xl  shadow-2xl mb-12 sm:mb-16 lg:mb-20 animate-on-scroll overflow-hidden">
+        <div className="w-full mt-20 h-44 sm:h-60 md:h-96 lg:h-[500px] rounded-2xl  shadow-2xl mb-12 sm:mb-16 lg:mb-20 animate-on-scroll overflow-hidden">
           <img
             src="https://docplix.com/_next/static/media/about_us_img.94c597c5.svg"
             alt="Team photo"
@@ -126,26 +138,24 @@ const Company = () => {
         </div>
 
         {/* Story Content Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start animate-on-scroll">
-          {/* Left side - Your health matters */}
+        {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start animate-on-scroll">
           <div>
-            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium text-gray-900 leading-tight ">
+            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium text-brand-text leading-tight ">
               <span className="">Your health</span>
               <br />
               matters
             </h2>
           </div>
 
-          {/* Right side - Story content */}
           <div className="space-y-4 sm:space-y-6 ">
-            <p className="text-gray-900 text-sm sm:text-sm leading-relaxed">
+            <p className="text-brand-text text-sm sm:text-sm leading-relaxed">
               <strong className="font-semibold">
                 "Your health deserves better than silence between visits. "
               </strong>
               .
             </p>
 
-            <p className="text-gray-700 text-sm sm:text-sm leading-relaxed">
+            <p className="text-brand-text text-sm sm:text-sm leading-relaxed">
               Olli AI is your intelligent healthcare companion — not a chatbot,
               not a virtual doctor — but an always-available ally. Born from
               personal pain and professional insight, Olli was created after a
@@ -154,30 +164,55 @@ const Company = () => {
               human reality: ambiguity, overwhelm, and urgency.
             </p>
 
-            <p className="text-gray-700 text-sm sm:text-sm leading-relaxed">
+            <p className="text-brand-text text-sm sm:text-sm leading-relaxed">
               Built by a team of doctors, engineers, and
               patients-turned-creators, Olli now supports doctors and patients
               across 800+ clinics and 25+ hospitals — decoding reports,
               explaining medical terms, and weaving together fragmented data
               with context-aware AI.
             </p>
-            <p className="text-gray-700 text-sm sm:text-sm leading-relaxed">
+            <p className="text-brand-text text-sm sm:text-sm leading-relaxed">
               We believe AI isn't just about speed or automation. It's about not
               missing the thing that matters, because someone was too tired, too
               rushed, or too human. And that future isn't far away.
             </p>
           </div>
+        </div> */}
+        <div className="text-center max-w-5xl mx-auto animate-on-scroll">
+          <span className="inline-block text-xs font-normal text-brand-text bg-gray-100 px-3 py-1 rounded-full mb-6">
+            Our Aim
+          </span>
+          <h1 className="text-3xl md:text-5xl font-medium leading-snug text-brand-text">
+            Your health matters
+          </h1>
+          <p className="mt-6 text-brand-text text-sm md:text-base">
+            <strong className="font-semibold">
+              "Your health deserves better than silence between visits. "
+            </strong>
+            Olli AI is your intelligent healthcare companion — not a chatbot,
+            not a virtual doctor — but an always-available ally. Born from
+            personal pain and professional insight, Olli was created after a
+            4-month diagnostic delay experienced by one of our founders. What
+            followed was an AI platform trained not just on symptoms, but on
+            human reality: ambiguity, overwhelm, and urgency.
+            <br /> <br />
+            Built by a team of doctors, engineers, and patients-turned-creators,
+            Olli now supports doctors and patients across 800+ clinics and 25+
+            hospitals — decoding reports, explaining medical terms, and weaving
+            together fragmented data with context-aware AI. We believe AI isn't
+            just about speed or automation. It's about not missing the thing
+            that matters, because someone was too tired, too rushed, or too
+            human. And that future isn't far away.
+          </p>
         </div>
 
         {/* Values Section */}
         <div className="mt-20 sm:mt-24 lg:mt-32 text-center animate-on-scroll">
-          <p className="text-gray-600 text-base sm:text-lg mb-6 sm:mb-8">
+          <span className="inline-block text-xs font-normal text-brand-text bg-gray-100 px-3 py-1 rounded-full mb-6">
             Our Values
-          </p>
-          <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium text-gray-900 leading-tight  mb-12 sm:mb-16">
-            We lead with
-            <br />
-            <span className="">our principles</span>
+          </span>
+          <h2 className="text-3xl md:text-5xl font-medium text-brand-text leading-tight  mb-12 sm:mb-16">
+            We lead with our principles
           </h2>
 
           {/* Values Cards */}
@@ -187,7 +222,7 @@ const Company = () => {
               <div className="mb-4 sm:mb-6">
                 <div className="w-12 h-12 sm:w-16 sm:h-16 mx-auto bg-gray-100 rounded-full flex items-center justify-center">
                   <svg
-                    className="w-6 h-6 sm:w-8 sm:h-8 text-gray-700"
+                    className="w-6 h-6 sm:w-8 sm:h-8 text-brand-text"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -201,10 +236,10 @@ const Company = () => {
                   </svg>
                 </div>
               </div>
-              <h3 className="text-lg sm:text-xl font-medium text-gray-900 mb-3 sm:mb-4">
+              <h3 className="text-lg sm:text-xl font-medium text-brand-text mb-3 sm:mb-4">
                 Passion
               </h3>
-              <p className="text-gray-600 leading-relaxed text-xs sm:text-xs">
+              <p className="text-brand-text leading-relaxed text-xs sm:text-sm">
                 We're relentless about transforming care — Olli has already
                 helped over 200,000+ patients through its AI-driven insights.
               </p>
@@ -215,7 +250,7 @@ const Company = () => {
               <div className="mb-4 sm:mb-6">
                 <div className="w-12 h-12 sm:w-16 sm:h-16 mx-auto bg-gray-100 rounded-full flex items-center justify-center">
                   <svg
-                    className="w-6 h-6 sm:w-8 sm:h-8 text-gray-700"
+                    className="w-6 h-6 sm:w-8 sm:h-8 text-brand-text"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -229,10 +264,10 @@ const Company = () => {
                   </svg>
                 </div>
               </div>
-              <h3 className="text-lg sm:text-xl font-medium text-gray-900 mb-3 sm:mb-4">
+              <h3 className="text-lg sm:text-xl font-medium text-brand-text mb-3 sm:mb-4">
                 Customer Focus
               </h3>
-              <p className="text-gray-600 leading-relaxed text-xs sm:text-xs">
+              <p className="text-gray-600 leading-relaxed text-xs sm:text-sm">
                 Whether you're a doctor, patient, or caregiver — our 24x7 agent
                 availability ensures 99.9% uptime, always ready to help.{" "}
               </p>
@@ -243,7 +278,7 @@ const Company = () => {
               <div className="mb-4 sm:mb-6">
                 <div className="w-12 h-12 sm:w-16 sm:h-16 mx-auto bg-gray-100 rounded-full flex items-center justify-center">
                   <svg
-                    className="w-6 h-6 sm:w-8 sm:h-8 text-gray-700"
+                    className="w-6 h-6 sm:w-8 sm:h-8 text-brand-text"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -257,10 +292,10 @@ const Company = () => {
                   </svg>
                 </div>
               </div>
-              <h3 className="text-lg sm:text-xl font-medium text-gray-900 mb-3 sm:mb-4">
+              <h3 className="text-lg sm:text-xl font-medium text-brand-text mb-3 sm:mb-4">
                 Transparency
               </h3>
-              <p className="text-gray-600 leading-relaxed text-xs sm:text-sm">
+              <p className="text-brand-text leading-relaxed text-xs sm:text-sm">
                 From AI explainability to ethical data use, we lead with
                 honesty. All AI actions are auditable and medically reviewed.
               </p>
@@ -272,20 +307,20 @@ const Company = () => {
 
         {/* Team Section */}
         <div className="mt-20 sm:mt-24 lg:mt-32 text-center animate-on-scroll">
-          <p className="text-gray-600 text-base sm:text-lg mb-6 sm:mb-8">
+          <span className="inline-block text-xs font-normal text-brand-text bg-gray-100 px-3 py-1 rounded-full mb-6">
             Our Team
-          </p>
-          <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium text-gray-900 leading-tight mb-12 sm:mb-16">
+          </span>
+          <h2 className="text-3xl md:text-5xl  font-medium text-brand-text leading-tight mb-12 sm:mb-16">
             Meet the Minds Behind Olli
           </h2>
-          <p className="text-gray-700 text-sm sm:text-base mb-6 sm:mb-8 max-w-[750px] mx-auto px-4">
+          <p className="text-brand-text text-sm sm:text-base mb-6 sm:mb-8 max-w-[750px] mx-auto px-4">
             Founded by a doctor-engineer duo, Olli AI blends healthcare depth
             with technical brilliance — ensuring your care is powered by
             compassion, logic, and relentless innovation.
           </p>
 
           {/* Team Members */}
-          <div className="flex flex-col gap-16 sm:gap-20 lg:gap-28 mt-16 sm:mt-20 lg:mt-24 mx-auto mb-12 sm:mb-16">
+          <div className="flex ml-6 flex-col gap-16 sm:gap-20 lg:gap-28 mt-16 sm:mt-20 lg:mt-24 mx-auto mb-12 sm:mb-16">
             {/* Member 1 */}
             <div className="flex flex-col lg:flex-row items-center lg:items-start text-center lg:text-left animate-on-scroll stagger-delay-1 gap-8 lg:gap-12">
               <div className="mb-4 sm:mb-6 flex-shrink-0">
@@ -294,23 +329,23 @@ const Company = () => {
                   alt="Varun Grag"
                   className="w-60 h-72 lg:w-80 lg:h-96 object-cover rounded-2xl mx-auto shadow-lg"
                 />
-                <h3 className="text-xl mt-5 sm:text-2xl font-medium text-gray-900 mb-2 lg:ml-20">
+                <h3 className="text-xl mt-5 sm:text-2xl font-medium text-brand-text mb-2 lg:ml-20">
                   Varun Garg
                 </h3>
-                <p className="text-gray-600 mb-3 sm:mb-4 text-sm sm:text-base lg:ml-16">
+                <p className="text-brand-text mb-3 sm:mb-4 text-sm sm:text-base lg:ml-16">
                   CEO, Olli AI, DocPlix
                 </p>
                 <a
                   href="https://www.linkedin.com/in/dr-varun-garg-903110a4/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-600 hover:text-gray-500 transition-colors inline-block lg:ml-28"
+                  className="text-brand-text hover:text-gray-500 transition-colors inline-block lg:ml-28"
                 >
                   <Linkedin className="w-5 h-5 sm:w-6 sm:h-6 bg-gray-200 p-1 border rounded-sm mx-auto lg:mx-0 lg:ml-3" />
                 </a>
               </div>
 
-              <div className="text-gray-700 text-sm sm:text-base leading-relaxed max-w-xl lg:max-w-2xl px-4 lg:px-0">
+              <div className="text-brand-text text-sm sm:text-base leading-relaxed max-w-xl lg:max-w-2xl px-4 lg:px-0">
                 A medical doctor and strategic leader, Dr. Varun brings clinical
                 depth and operational foresight to Olli AI. With years of
                 experience working at the intersection of healthcare delivery,
@@ -347,10 +382,10 @@ const Company = () => {
                   alt="Aayush Garg"
                   className="w-60 h-72 lg:w-80 lg:h-96 object-cover rounded-2xl mx-auto shadow-lg"
                 />
-                <h3 className="text-xl mt-5 sm:text-2xl font-medium text-gray-900 mb-2 lg:ml-20">
+                <h3 className="text-xl mt-5 sm:text-2xl font-medium text-brand-text mb-2 lg:ml-20">
                   Aayush Garg
                 </h3>
-                <p className="text-gray-600  mb-3 sm:mb-4 text-sm sm:text-base lg:ml-10 ">
+                <p className="text-brand-text mb-3 sm:mb-4 text-sm sm:text-base lg:ml-10 ">
                   Founder & CTO, Olli AI, DocPlix
                 </p>
                 <a
@@ -363,7 +398,7 @@ const Company = () => {
                 </a>
               </div>
 
-              <div className="text-gray-700 text-sm sm:text-base leading-relaxed max-w-xl lg:max-w-2xl px-4 lg:px-0">
+              <div className="text-brand-text text-sm sm:text-base leading-relaxed max-w-xl lg:max-w-2xl px-4 lg:px-0">
                 Aayush is a tech entrepreneur and AI architect with a mission to
                 transform how healthcare systems think, act, and respond. With a
                 deep background in building scalable SaaS and AI platforms, he

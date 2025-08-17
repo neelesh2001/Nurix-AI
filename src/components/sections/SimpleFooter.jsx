@@ -56,7 +56,7 @@ const SimpleFooter = () => {
 
           {/* Company Links */}
           <div>
-            <h4 className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-6">
+            <h4 className="text-xs font-medium text-brand-primary uppercase tracking-wide mb-6">
               RESOURCES
             </h4>
             <ul className="space-y-4 text-xs">
@@ -64,7 +64,7 @@ const SimpleFooter = () => {
                 <Link
                   to="/"
                   onClick={handleScrollToTop}
-                  className="text-gray-700 hover:text-gray-900 transition-colors duration-200"
+                  className="text-brand-text hover:text-brand-text transition-colors duration-200"
                 >
                   Home
                 </Link>
@@ -73,7 +73,7 @@ const SimpleFooter = () => {
                 <Link
                   to="/company"
                   onClick={handleScrollToTop}
-                  className="text-gray-700 hover:text-gray-900 transition-colors duration-200"
+                  className="text-brand-text hover:text-brand-text transition-colors duration-200"
                 >
                   Company
                 </Link>
@@ -83,7 +83,7 @@ const SimpleFooter = () => {
 
           {/* Solutions Links */}
           <div>
-            <h4 className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-6">
+            <h4 className="text-xs font-medium text-brand-primary uppercase tracking-wide mb-6">
               LEGAL
             </h4>
             <ul className="space-y-4 text-xs">
@@ -119,7 +119,7 @@ const SimpleFooter = () => {
 
           {/* Follow Us Links */}
           <div>
-            <h4 className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-6">
+            <h4 className="text-xs font-medium text-brand-primary uppercase tracking-wide mb-6">
               FOLLOW US
             </h4>
             <ul className="space-y-4 text-xs">
@@ -232,7 +232,11 @@ const SimpleFooter = () => {
 
         {/* Bottom Section */}
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-gray-100">
-          <div className="text-sm text-gray-600 mb-4 md:mb-0">© 2024 Olli</div>
+          <div className="text-sm text-brand-text mb-4 md:mb-0">
+            Olli.AI © 2025
+            <br />
+            Docplix Solutions Private Limited. All rights reserved.
+          </div>
         </div>
       </div>
     </footer>
