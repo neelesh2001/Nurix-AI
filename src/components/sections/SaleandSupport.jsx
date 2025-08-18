@@ -25,12 +25,13 @@ export default function SaleandSupport() {
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
       >
-        <div className="grid grid-cols-1 md:grid-cols-2 relative gap-10 md:gap-0 justify-items-center ">
+        <div className="grid grid-cols-1 md:grid-cols-2 relative gap-10 md:gap-16 justify-items-center">
           {/* Vertical Line Between Cards */}
-          <div className="hidden md:block absolute left-[52%] top-0 bottom-0 w-px bg-gray-200 transform -translate-x-1/2 z-10"></div>
+          <div className="hidden md:block absolute inset-y-0 left-1/2 w-px bg-gray-200 transform -translate-x-1/2 z-10"></div>
 
           {/* 🔹 Card 1 - Support */}
-          <div className="group relative w-full max-w-[500px] md:ml-32 ml-0  p-8 cursor-pointer transition-all duration-300 bg-white hover:bg-brand-primary rounded-lg">
+          <div className="group relative w-full max-w-[500px] p-8 cursor-pointer transition-all duration-300 bg-white hover:bg-brand-primary rounded-lg">
+            {/* SVG */}
             <svg
               viewBox="0 0 620 188"
               fill="none"
@@ -153,12 +154,13 @@ export default function SaleandSupport() {
 
             <p className="text-sm text-brand-text mt-2 group-hover:text-blue-100 transition">
               Answer patient questions, book appointments, and handle complaints
-              — even while you sleep.{" "}
+              — even while you sleep.
             </p>
           </div>
 
           {/* 🔸 Card 2 - Sales */}
-          <div className="group relative pl-10 p-8 w-full max-w-[500px] cursor-pointer transition-all duration-300 bg-white hover:bg-brand-primary rounded-lg">
+          <div className="group relative w-full max-w-[500px] p-8 cursor-pointer transition-all duration-300 bg-white hover:bg-brand-primary rounded-lg">
+            {/* SVG */}
             <svg
               viewBox="0 0 620 188"
               fill="none"
@@ -241,15 +243,8 @@ export default function SaleandSupport() {
             </h3>
 
             <p className="text-sm text-brand-text mt-2 group-hover:text-blue-100 transition">
-              Capture interest the moment it happens — instantly, automatically.{" "}
+              Capture interest the moment it happens — instantly, automatically.
             </p>
-
-            {/* <div
-              onClick={() => handleNavigation("/sales")}
-              className="absolute bottom-6 right-6 w-9 h-9 rounded-full border border-gray-300 flex items-center justify-center text-gray-500 group-hover:bg-white group-hover:text-blue-700 transition-all duration-300 hover:transform hover:-translate-y-1 hover:-rotate-45 cursor-pointer"
-            >
-              →
-            </div> */}
           </div>
         </div>
       </motion.section>
