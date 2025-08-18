@@ -16,7 +16,7 @@ export default function SaleandSupport() {
 
   return (
     <>
-      {/* <div className="border-b border-gray-200 "></div> */}
+      <div className="border-b border-gray-200 "></div>
 
       <motion.section
         className="w-full min-h-[24rem] px-4 py-12 md:px-12 lg:px-20 -mt-6 bg-white "
@@ -254,7 +254,7 @@ export default function SaleandSupport() {
         </div>
       </motion.section>
 
-      {/* <div className="border-b border-gray-200 -mt-[47px]"></div> */}
+      <div className="border-b border-gray-200 -mt-[47px]"></div>
     </>
   );
 }

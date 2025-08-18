@@ -4,6 +4,8 @@ import SimpleFooter from "../components/sections/SimpleFooter";
 import Navbar from "../components/common/Navbar";
 import Footer from "../components/sections/Footer";
 import { Link } from "react-router-dom";
+import Varun from "../assets/images/Varun.png";
+import Aayush from "../assets/images/Aayush.png";
 
 const Company = () => {
   const observerRef = useRef(null);
@@ -89,28 +91,6 @@ const Company = () => {
       `}</style>
 
       <div className="max-w-7xl px-4 sm:px-6 lg:pl-36 lg:pr-6 mt-12 sm:mt-16 lg:mt-20 bg-white">
-        {/* Header Section */}
-        {/* <div className="mb-12 sm:mb-16 animate-on-scroll">
-          <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start gap-6 lg:gap-8">
-            <div className="lg:w-1/2">
-              <span className="inline-block text-xs font-normal text-brand-text bg-gray-100 px-3 py-1 rounded-full mb-4">
-                All-in-One AI Front Desk
-              </span>
-              <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium text-brand-textleading-tight mt-10">
-                Built in India,Trusted Globally — AI-Powered Healthcare with You
-                at the Core
-              </h1>
-            </div>
-
-            <div className="lg:w-[600px] lg:text-right lg:pt-20 mt-14 sm:mt-12 lg:mt-40 lg:mr-20 pl-40">
-              <p className="text-brand-text text-base sm:text-lg font-normal">
-                We serve 5M+ patient interactions a year and counting — Olli AI
-                was designed from the ground up to empower real-world care, with
-                empathy, intelligence, and global scalability.
-              </p>
-            </div>
-          </div>
-        </div> */}
         <div className="text-center max-w-5xl mx-auto">
           <span className="inline-block text-xs font-normal text-brand-text bg-gray-100 px-3 py-1  rounded-full mb-6">
             Our Story
@@ -137,47 +117,6 @@ const Company = () => {
           />
         </div>
 
-        {/* Story Content Section */}
-        {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start animate-on-scroll">
-          <div>
-            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium text-brand-text leading-tight ">
-              <span className="">Your health</span>
-              <br />
-              matters
-            </h2>
-          </div>
-
-          <div className="space-y-4 sm:space-y-6 ">
-            <p className="text-brand-text text-sm sm:text-sm leading-relaxed">
-              <strong className="font-semibold">
-                "Your health deserves better than silence between visits. "
-              </strong>
-              .
-            </p>
-
-            <p className="text-brand-text text-sm sm:text-sm leading-relaxed">
-              Olli AI is your intelligent healthcare companion — not a chatbot,
-              not a virtual doctor — but an always-available ally. Born from
-              personal pain and professional insight, Olli was created after a
-              4-month diagnostic delay experienced by one of our founders. What
-              followed was an AI platform trained not just on symptoms, but on
-              human reality: ambiguity, overwhelm, and urgency.
-            </p>
-
-            <p className="text-brand-text text-sm sm:text-sm leading-relaxed">
-              Built by a team of doctors, engineers, and
-              patients-turned-creators, Olli now supports doctors and patients
-              across 800+ clinics and 25+ hospitals — decoding reports,
-              explaining medical terms, and weaving together fragmented data
-              with context-aware AI.
-            </p>
-            <p className="text-brand-text text-sm sm:text-sm leading-relaxed">
-              We believe AI isn't just about speed or automation. It's about not
-              missing the thing that matters, because someone was too tired, too
-              rushed, or too human. And that future isn't far away.
-            </p>
-          </div>
-        </div> */}
         <div className="text-center max-w-5xl mx-auto animate-on-scroll">
           <span className="inline-block text-xs font-normal text-brand-text bg-gray-100 px-3 py-1 rounded-full mb-6">
             Our Aim
@@ -325,9 +264,9 @@ const Company = () => {
             <div className="flex flex-col lg:flex-row items-center lg:items-start text-center lg:text-left animate-on-scroll stagger-delay-1 gap-8 lg:gap-12">
               <div className="mb-4 sm:mb-6 flex-shrink-0">
                 <img
-                  src="https://media.licdn.com/dms/image/v2/D5603AQGgcg3ipamtsQ/profile-displayphoto-shrink_800_800/B56ZTPlNYsHwAg-/0/1738649427626?e=1756339200&v=beta&t=REq92zQiJ0oET3sz3Y6M6fQ4ZcrVw1fzT5K9L6DOwDQ"
+                  src={Varun}
                   alt="Varun Grag"
-                  className="w-60 h-72 lg:w-80 lg:h-96 object-cover rounded-2xl mx-auto shadow-lg"
+                  className="w-60 h-72 lg:w-80 lg:h-96 object-cover rounded-xl mx-auto shadow-lg"
                 />
                 <h3 className="text-xl mt-5 sm:text-2xl font-medium text-brand-text mb-2 lg:ml-20">
                   Varun Garg
@@ -378,9 +317,9 @@ const Company = () => {
             <div className="flex flex-col lg:flex-row items-center lg:items-start text-center lg:text-left animate-on-scroll stagger-delay-1 gap-8 lg:gap-12">
               <div className="mb-4 sm:mb-6 flex-shrink-0">
                 <img
-                  src="https://media.licdn.com/dms/image/v2/D5603AQEi6cXTARR9uw/profile-displayphoto-shrink_800_800/B56ZSdCP4wGsAc-/0/1737801400572?e=1756339200&v=beta&t=HKM70ABdvRj_yMdHu5I_j0Q-AR8xPZcFVLx0C9Z-GOM"
+                  src={Aayush}
                   alt="Aayush Garg"
-                  className="w-60 h-72 lg:w-80 lg:h-96 object-cover rounded-2xl mx-auto shadow-lg"
+                  className="w-60 h-72 lg:w-80 lg:h-96 object-cover rounded-xl mx-auto shadow-lg"
                 />
                 <h3 className="text-xl mt-5 sm:text-2xl font-medium text-brand-text mb-2 lg:ml-20">
                   Aayush Garg
