@@ -42,7 +42,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="bg-white min-h-screen flex flex-col items-center justify-center px-6 lg:px-20 py-16">
+    <section className="bg-white min-h-screen flex flex-col items-center lg:justify-center px-6 lg:px-20 py-16">
       {/* Heading */}
       <div className="text-center max-w-4xl mx-auto">
         <span className="inline-block text-xs font-normal text-brand-text bg-gray-100 px-3 py-1 rounded-full mb-6">

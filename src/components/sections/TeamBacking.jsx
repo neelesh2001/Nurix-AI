@@ -37,7 +37,6 @@ const TeamBacking = () => {
           Team & Backing
         </div>
 
-        {/* Main Heading */}
         <h2 className="text-3xl md:text-5xl font-medium text-brand-text leading-tight mb-6">
           Built by Healthcare Engineers. <br />
           Backed by Visionary Investors

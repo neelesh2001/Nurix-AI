@@ -81,21 +81,25 @@ export default function CapabilitiesSection() {
   };
 
   return (
-    <section className="px-4 py-16 md:px-12 lg:px-32 bg-white">
-      <motion.div
-        className="mb-12 text-center md:text-left"
+    <section className="px-4 py-16 md:px-12 lg:px-32 bg-white pt-0">
+      <motion.section
+        className="bg-white"
         variants={headerVariants}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
       >
-        <span className="inline-block text-xs font-normal text-brand-text bg-gray-100 px-3 py-1 rounded-full mb-2 mx-auto md:ml-[550px]">
-          Capabilities
-        </span>
-        <h2 className="text-3xl md:text-5xl font-medium text-brand-text max-w-2xl mt-2 mx-auto md:ml-[300px]">
-          Discover the Olli Advantage
-        </h2>
-      </motion.div>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-16 pb-12">
+          {/* Header Badge */}
+          <div className="inline-block bg-gray-200 text-brand-text px-3 py-1 rounded-full text-xs font-normal mb-8">
+            Capabilities
+          </div>
+
+          <h2 className="text-3xl md:text-5xl font-medium text-brand-text leading-tight mb-6">
+            Discover the Olli Advantage
+          </h2>
+        </div>
+      </motion.section>
 
       {/* Cards Container */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-[1100px] mx-auto">
