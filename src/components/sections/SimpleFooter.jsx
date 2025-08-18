@@ -1,16 +1,8 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
-import icon from "../../assets/logo.svg";
+import icon from "../../assets/logo/logo.svg";
 
 const SimpleFooter = () => {
-  const [email, setEmail] = useState("");
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Newsletter subscription:", email);
-    setEmail("");
-  };
   const handleScrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "instant" });
   };
@@ -29,29 +21,6 @@ const SimpleFooter = () => {
                 className="w-24 h-24 -mt-5 sm:w-30 sm:h-30 object-contain"
               />
             </Link>
-
-            {/* <div>
-              <h3 className="text-lg font-normal text-gray-900 mb-4">
-                Subscribe to Newsletter
-              </h3>
-
-              <form onSubmit={handleSubmit} className="flex">
-                <input
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="your@email.com"
-                  className="flex-1 px-4 py-2 border-b text-xs border-gray-300 bg-transparent focus:border-blue-500 focus:outline-none text-gray-600 placeholder-gray-400"
-                  required
-                />
-                <button
-                  type="submit"
-                  className="ml-2 p-2 text-gray-400 hover:text-blue-500 transition-colors duration-200"
-                >
-                  <ArrowRight className="w-5 h-5" />
-                </button>
-              </form>
-            </div> */}
           </div>
 
           {/* Company Links */}
@@ -105,15 +74,6 @@ const SimpleFooter = () => {
                   Privacy Policy
                 </Link>
               </li>
-              {/* <li>
-                <Link
-                  to="/refund"
-                  onClick={handleScrollToTop}
-                  className="text-gray-700 hover:text-gray-900 transition-colors duration-200"
-                >
-                  Refund Policy
-                </Link>
-              </li> */}
             </ul>
           </div>
 
@@ -166,69 +126,6 @@ const SimpleFooter = () => {
             </ul>
           </div>
         </div>
-
-        {/* <div className="mb-16">
-          <h4 className="text-sm font-medium text-gray-400 uppercase tracking-wide mb-6">
-            CERTIFICATES
-          </h4>
-
-          <div className="flex flex-wrap items-center gap-8">
-            <div className="flex items-center space-x-3">
-              <div className="w-12 h-12 border-2 border-gray-300 rounded-full flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-xs font-bold text-gray-700">ISO</div>
-                  <div className="text-xs text-gray-600">27001</div>
-                </div>
-              </div>
-              <div className="text-sm text-gray-600">
-                ISO
-                <br />
-                27001
-              </div>
-            </div>
-
-            <div className="flex items-center space-x-3">
-              <div className="w-12 h-12 border-2 border-gray-300 rounded-full flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-xs font-bold text-gray-700">AICPA</div>
-                  <div className="text-xs text-gray-600">SOC 2</div>
-                </div>
-              </div>
-              <div className="text-sm text-gray-600">
-                AICPA
-                <br />
-                SOC 2
-              </div>
-            </div>
-
-            <div className="flex items-center space-x-3">
-              <div className="w-12 h-12 border-2 border-gray-300 rounded-full flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-xs font-bold text-gray-700">GDPR</div>
-                  <div className="text-xs text-gray-600">compliant</div>
-                </div>
-              </div>
-              <div className="text-sm text-gray-600">
-                GDPR
-                <br />
-                compliant
-              </div>
-            </div>
-
-            <div className="flex items-center space-x-3">
-              <div className="w-12 h-12 border-2 border-gray-300 rounded-full flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-lg">⚕</div>
-                </div>
-              </div>
-              <div className="text-sm text-gray-600">
-                HIPAA
-                <br />
-                compliant
-              </div>
-            </div>
-          </div>
-        </div> */}
 
         {/* Bottom Section */}
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-gray-100">

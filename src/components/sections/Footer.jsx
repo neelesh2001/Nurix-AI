@@ -1,23 +1,14 @@
 // components/common/Footer.jsx
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Linkedin, Youtube, Instagram } from "lucide-react";
-import icon from "../../assets/logo_light.svg";
-import AES from "../../assets/AES.png";
-import ABDM from "../../assets/ABDM.png";
-import AWS from "../../assets/AWS.png";
-import DPIIT from "../../assets/DPIIT.png";
-import META from "../../assets/META.png";
+import icon from "../../assets/logo/logo_light.svg";
+import AES from "../../assets/benchmark/AES.png";
+import ABDM from "../../assets/benchmark/ABDM.png";
+import AWS from "../../assets/benchmark/AWS.png";
+import DPIIT from "../../assets/benchmark/DPIIT.png";
+import META from "../../assets/benchmark/META.png";
 
 const Footer = () => {
-  const [email, setEmail] = useState("");
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle newsletter subscription
-    console.log("Newsletter subscription:", email);
-    setEmail("");
-  };
   const handleScrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "instant" });
   };
@@ -28,69 +19,40 @@ const Footer = () => {
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
           {/* Left Section - Newsletter */}
-          <div className="lg:col-span-2 space-y-8 w-[450px]">
-            {/* Logo and Tagline */}
+          <div className="lg:col-span-2 space-y-8 w-full lg:w-[450px] text-center lg:text-left">
             <div className="space-y-4">
               <Link to="/" className="inline-block">
                 <img
                   src={icon}
                   alt="Logo"
-                  className="w-32 h-32 -mt-5 sm:w-36 sm:h-36 object-contain"
-                />{" "}
+                  className="w-24 h-24 sm:w-32 sm:h-32 lg:w-36 lg:h-36 object-contain -mt-5 mx-auto lg:mx-0"
+                />
               </Link>
-              <p className="text-gray-400 text-sm">Future of Enterprise AI</p>
+
+              <p className="text-gray-400 text-sm text-center lg:text-left">
+                Future of Enterprise AI
+              </p>
             </div>
 
-            {/* Certification Badges */}
-            <div className="flex flex-wrap justify-start gap-5 mt-6  ">
-              <img src={AES} alt="AES" className="w-12 h-12 sm:w-14 sm:h-14 " />
-
+            <div className="flex flex-wrap justify-center lg:justify-start gap-5 mt-6">
+              <img src={AES} alt="AES" className="w-12 h-12 sm:w-14 sm:h-14" />
               <img
                 src={ABDM}
                 alt="ABDM"
-                className="w-12 h-12 sm:w-14 sm:h-14  "
+                className="w-12 h-12 sm:w-14 sm:h-14"
               />
-
-              <img src={AWS} alt="AWS" className="w-12 h-12 sm:w-14 sm:h-14 " />
-
+              <img src={AWS} alt="AWS" className="w-12 h-12 sm:w-14 sm:h-14" />
               <img
                 src={DPIIT}
                 alt="DPIIT"
-                className="w-12 h-12 sm:w-14 sm:h-14 "
+                className="w-12 h-12 sm:w-14 sm:h-14"
               />
               <img
                 src={META}
                 alt="META"
-                className="w-12 h-12 sm:w-14 sm:h-14 "
+                className="w-12 h-12 sm:w-14 sm:h-14"
               />
             </div>
-
-            {/* Newsletter Subscription */}
-            {/* <div className="space-y-6">
-              <div className="space-y-2">
-                <h3 className="text-sm font-semibold">Subscribe to our</h3>
-                <h3 className="text-sm font-semibold">Newsletter</h3>
-              </div>
-
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <div className="relative">
-                  <input
-                    type="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder="your@email.com"
-                    className="w-full bg-transparent border-b border-gray-600 pb-2 text-white placeholder-gray-400 focus:border-blue-500 focus:outline-none"
-                    required
-                  />
-                </div>
-                <button
-                  type="submit"
-                  className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200"
-                >
-                  SUBMIT
-                </button>
-              </form>
-            </div> */}
           </div>
 
           {/* Company Links */}
@@ -212,7 +174,6 @@ const Footer = () => {
           <div className="text-brand-surface font-black text-[6rem] md:text-[12rem] lg:text-[16rem] leading-none opacity-15 select-none">
             Olli.A
           </div>
-          {/* Blue Arrow */}
           <div className="text-brand-secondary font-black text-[6rem] md:text-[12rem] lg:text-[16rem] leading-none opacity-20 ml-2 md:ml-4">
             I
           </div>

@@ -2,8 +2,8 @@ import { useState, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { ChevronDown, X, Menu } from "lucide-react";
 import useClickOutside from "../../hooks/useClickOutside";
-import icon from "../../assets/logo.svg";
-import logo from "../../assets/docplix.svg";
+import icon from "../../assets/logo/logo.svg";
+import logo from "../../assets/logo/docplix.svg";
 
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);

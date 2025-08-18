@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import bg from "../../assets/investor.png";
+import bg from "../../assets/images/investor.png";
 import { Link } from "react-router-dom";
 
 const TeamBacking = () => {
@@ -33,7 +33,7 @@ const TeamBacking = () => {
     >
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-16 pb-12">
         {/* Header Badge */}
-        <div className="inline-block bg-gray-200 text-brand-text px-3 py-1 rounded-full text-sm font-normal mb-8">
+        <div className="inline-block bg-gray-200 text-brand-text px-3 py-1 rounded-full text-xs font-normal mb-8">
           Team & Backing
         </div>
 

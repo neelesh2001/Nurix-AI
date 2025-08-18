@@ -1,10 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import img1 from "../../assets/Img01.png";
-import img2 from "../../assets/Img02.png";
-import img4 from "../../assets/Img04.png";
-import img5 from "../../assets/Img05.png";
+import img1 from "../../assets/images/Img01.png";
+import img2 from "../../assets/images/Img02.png";
+import img4 from "../../assets/images/Img04.png";
+import img5 from "../../assets/images/Img05.png";
 
 const capabilities = [
   {
@@ -82,73 +82,6 @@ export default function CapabilitiesSection() {
 
   return (
     <section className="px-4 py-16 md:px-12 lg:px-32 bg-white">
-      {/* <motion.div
-        className="mb-12 md:ml-28 ml-4"
-        variants={headerVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.3 }}
-      >
-        <span className="inline-block text-xs font-normal ml-[450px] text-brand-text bg-gray-100 px-3 py-1 rounded-full mb-2">
-          Capabilities
-        </span>
-        <h2 className="text-3xl md:text-5xl font-medium ml-[198px] text-brand-text max-w-2xl mt-2">
-          Discover the Olli Advantage
-        </h2>
-      </motion.div>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-[1100px] mx-auto">
-        {capabilities.map((item, index) => (
-          <motion.div
-            key={index}
-            className="bg-white border rounded-md p-3 md:p-5 flex flex-col gap-6 items-start"
-            variants={cardVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
-          >
-            <div className="w-full h-[220px] md:h-[280px] overflow-hidden  bg-gray-100 rounded-md">
-              <img
-                src={item.image}
-                alt={item.title}
-                className="w-full h-full object-cover"
-              />
-            </div>
-
-            <div className="flex-1 space-y-6 w-[1000px]">
-              <h3 className="text-xl md:text-2xl font-medium text-brand-text leading-tight ">
-                {item.title}
-              </h3>
-
-              <div className="space-y-5">
-                {item.features.map((feature, featureIndex) => (
-                  <div key={featureIndex} className="flex flex-col items-start">
-                    <div>
-                      <h3 className="text-brand-text font-normal text-lg md:text-xl mb-2">
-                        {feature.heading}
-                      </h3>
-                      <ul className="space-y-2 text-gray-600 text-sm md:text-base leading-relaxed">
-                        {feature.points.map((point, idx) => (
-                          <li key={idx}>{point}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              <div className="pt-3">
-                <Link
-                  to="/contact-us"
-                  className=" ml-[380px] px-4 py-2 bg-brand-primary text-white text-xs rounded-full font-normal  transition-colors duration-200 inline-block"
-                >
-                  LEARN MORE
-                </Link>
-              </div>
-            </div>
-          </motion.div>
-        ))}
-      </div> */}
       <motion.div
         className="mb-12 text-center md:text-left"
         variants={headerVariants}
