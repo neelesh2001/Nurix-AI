@@ -1,10 +1,6 @@
 import { motion } from "framer-motion";
 
 export default function SaleandSupport() {
-  // const handleNavigation = (path) => {
-  //   console.log(`Navigate to: ${path}`);
-  // };
-
   const sectionVariants = {
     hidden: { opacity: 0, y: 60 },
     visible: {
@@ -31,14 +27,12 @@ export default function SaleandSupport() {
 
           {/* 🔹 Card 1 - Support */}
           <div className="group relative w-full max-w-[500px] p-8 cursor-pointer transition-all duration-300 bg-white hover:bg-brand-primary rounded-lg">
-            {/* SVG */}
             <svg
               viewBox="0 0 620 188"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
               className="mb-4 w-full h-auto"
             >
-              {/* Your SVG Paths */}
               <path
                 opacity="0.2"
                 d="M130.65 25.4621L126.085 42.5"
@@ -160,7 +154,6 @@ export default function SaleandSupport() {
 
           {/* 🔸 Card 2 - Sales */}
           <div className="group relative w-full max-w-[500px] p-8 cursor-pointer transition-all duration-300 bg-white hover:bg-brand-primary rounded-lg">
-            {/* SVG */}
             <svg
               viewBox="0 0 620 188"
               fill="none"

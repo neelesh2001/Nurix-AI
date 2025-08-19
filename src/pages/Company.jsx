@@ -90,8 +90,8 @@ const Company = () => {
         }
       `}</style>
 
-      <div className="max-w-7xl px-4 sm:px-6 lg:pl-36 lg:pr-6 mt-12 sm:mt-16 lg:mt-20 bg-white">
-        <div className="text-center max-w-5xl mx-auto">
+      <div className="max-w-7xl px-4 sm:px-6 lg:px-8 mt-12 sm:mt-16 lg:mt-20 bg-white mx-auto">
+        <div className="text-center max-w-5xl mx-auto ">
           <span className="inline-block text-xs font-normal text-brand-text bg-gray-100 px-3 py-1  rounded-full mb-6">
             Our Story
           </span>
@@ -259,7 +259,7 @@ const Company = () => {
           </p>
 
           {/* Team Members */}
-          <div className="flex ml-6 flex-col gap-16 sm:gap-20 lg:gap-28 mt-16 sm:mt-20 lg:mt-24 mx-auto mb-12 sm:mb-16">
+          <div className="flex ml-16 flex-col gap-16 sm:gap-20 lg:gap-28 mt-16 sm:mt-20 lg:mt-24 mx-auto mb-12 sm:mb-16">
             {/* Member 1 */}
             <div className="flex flex-col lg:flex-row items-center lg:items-start text-center lg:text-left animate-on-scroll stagger-delay-1 gap-8 lg:gap-12">
               <div className="mb-4 sm:mb-6 flex-shrink-0">
