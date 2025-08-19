@@ -259,7 +259,7 @@ const Company = () => {
           </p>
 
           {/* Team Members */}
-          <div className="flex ml-16 flex-col gap-16 sm:gap-20 lg:gap-28 mt-16 sm:mt-20 lg:mt-24 mx-auto mb-12 sm:mb-16">
+          <div className="flex flex-col gap-16 sm:gap-20 lg:gap-28 mt-16 sm:mt-20 lg:mt-24 mx-auto mb-12 sm:mb-16 lg:ml-16">
             {/* Member 1 */}
             <div className="flex flex-col lg:flex-row items-center lg:items-start text-center lg:text-left animate-on-scroll stagger-delay-1 gap-8 lg:gap-12">
               <div className="mb-4 sm:mb-6 flex-shrink-0">
