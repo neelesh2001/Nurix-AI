@@ -46,7 +46,7 @@ const ContactUs = () => {
       };
 
       const res = await axios.post(
-        "https://stag.docpli.online/api/docplix/health-locker-web-url/record-visitor-data",
+        "https://stag.docplix.online/api/docplix/health-locker-web-url/record-visitor-data",
         payload
       );
 
